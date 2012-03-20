@@ -1,0 +1,6 @@
+_home:
+  pattern: /
+  defaults: {controller: WeMnid:Home:Index, template: WeMnid:home:index}
+_list:
+  pattern: /listado
+  defaults: { controller: WeMnid:List:Index, template: WeMnid:list:index }

@@ -1,0 +1,245 @@
+[Tue Mar 20 01:12:38 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined offset: 2 in /home/ephp.home/Ephp/fences/Ephp/Ephp.php on line 17
+[Tue Mar 20 01:12:38 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined offset: 1 in /home/ephp.home/Ephp/fences/Ephp/Ephp.php on line 17
+[Tue Mar 20 01:12:38 2012] [error] [client 127.0.0.1] PHP Fatal error:  Class '\\Controller\\Controller' not found in /home/ephp.home/Ephp/fences/Ephp/Ephp.php on line 21
+[Tue Mar 20 01:14:18 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined offset: 2 in /home/ephp.home/Ephp/fences/Ephp/Ephp.php on line 18
+[Tue Mar 20 01:14:18 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined offset: 1 in /home/ephp.home/Ephp/fences/Ephp/Ephp.php on line 18
+[Tue Mar 20 01:14:18 2012] [error] [client 127.0.0.1] PHP Fatal error:  Class '\\Controller\\Controller' not found in /home/ephp.home/Ephp/fences/Ephp/Ephp.php on line 23
+[Tue Mar 20 01:14:51 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined offset: 2 in /home/ephp.home/Ephp/fences/Ephp/Ephp.php on line 19
+[Tue Mar 20 01:14:51 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined offset: 1 in /home/ephp.home/Ephp/fences/Ephp/Ephp.php on line 19
+[Tue Mar 20 01:14:51 2012] [error] [client 127.0.0.1] PHP Fatal error:  Class '\\Controller\\Controller' not found in /home/ephp.home/Ephp/fences/Ephp/Ephp.php on line 24
+[Tue Mar 20 01:15:24 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined offset: 2 in /home/ephp.home/Ephp/fences/Ephp/Ephp.php on line 19
+[Tue Mar 20 01:15:24 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined offset: 1 in /home/ephp.home/Ephp/fences/Ephp/Ephp.php on line 19
+[Tue Mar 20 01:15:24 2012] [error] [client 127.0.0.1] PHP Fatal error:  Class '\\Controller\\Controller' not found in /home/ephp.home/Ephp/fences/Ephp/Ephp.php on line 24
+[Tue Mar 20 01:15:35 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined offset: 2 in /home/ephp.home/Ephp/fences/Ephp/Ephp.php on line 19
+[Tue Mar 20 01:15:35 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined offset: 1 in /home/ephp.home/Ephp/fences/Ephp/Ephp.php on line 19
+[Tue Mar 20 01:15:35 2012] [error] [client 127.0.0.1] PHP Fatal error:  Class '\\Controller\\Controller' not found in /home/ephp.home/Ephp/fences/Ephp/Ephp.php on line 24
+[Tue Mar 20 01:19:58 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined variable: route in /home/ephp.home/Ephp/fences/LayerC/lib/Translate.php on line 27
+[Tue Mar 20 01:19:58 2012] [error] [client 127.0.0.1] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/ephp.home/Ephp/fences/LayerC/methods/Variables.php on line 39
+[Tue Mar 20 01:19:58 2012] [error] [client 127.0.0.1] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/ephp.home/Ephp/fences/LayerC/methods/Variables.php on line 39
+[Tue Mar 20 01:19:58 2012] [error] [client 127.0.0.1] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/ephp.home/Ephp/fences/LayerC/methods/Variables.php on line 39
+[Tue Mar 20 01:19:58 2012] [error] [client 127.0.0.1] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/ephp.home/Ephp/fences/LayerC/methods/Variables.php on line 39
+[Tue Mar 20 01:19:58 2012] [error] [client 127.0.0.1] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/ephp.home/Ephp/fences/LayerC/methods/Variables.php on line 39
+[Tue Mar 20 01:20:06 2012] [error] [client 127.0.0.1] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/ephp.home/Ephp/fences/LayerC/methods/Variables.php on line 39
+[Tue Mar 20 01:20:06 2012] [error] [client 127.0.0.1] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/ephp.home/Ephp/fences/LayerC/methods/Variables.php on line 39
+[Tue Mar 20 01:20:06 2012] [error] [client 127.0.0.1] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/ephp.home/Ephp/fences/LayerC/methods/Variables.php on line 39
+[Tue Mar 20 01:20:06 2012] [error] [client 127.0.0.1] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/ephp.home/Ephp/fences/LayerC/methods/Variables.php on line 39
+[Tue Mar 20 01:20:06 2012] [error] [client 127.0.0.1] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/ephp.home/Ephp/fences/LayerC/methods/Variables.php on line 39
+[Tue Mar 20 01:20:31 2012] [error] [client 127.0.0.1] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/ephp.home/Ephp/fences/LayerC/methods/Variables.php on line 39
+[Tue Mar 20 01:20:31 2012] [error] [client 127.0.0.1] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/ephp.home/Ephp/fences/LayerC/methods/Variables.php on line 39
+[Tue Mar 20 01:20:31 2012] [error] [client 127.0.0.1] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/ephp.home/Ephp/fences/LayerC/methods/Variables.php on line 39
+[Tue Mar 20 01:20:31 2012] [error] [client 127.0.0.1] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/ephp.home/Ephp/fences/LayerC/methods/Variables.php on line 39
+[Tue Mar 20 01:20:31 2012] [error] [client 127.0.0.1] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/ephp.home/Ephp/fences/LayerC/methods/Variables.php on line 39
+[Tue Mar 20 01:21:23 2012] [error] [client 127.0.0.1] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/ephp.home/Ephp/fences/LayerC/methods/Variables.php on line 39
+[Tue Mar 20 01:21:23 2012] [error] [client 127.0.0.1] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/ephp.home/Ephp/fences/LayerC/methods/Variables.php on line 39
+[Tue Mar 20 01:21:23 2012] [error] [client 127.0.0.1] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/ephp.home/Ephp/fences/LayerC/methods/Variables.php on line 39
+[Tue Mar 20 01:21:23 2012] [error] [client 127.0.0.1] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/ephp.home/Ephp/fences/LayerC/methods/Variables.php on line 39
+[Tue Mar 20 01:21:23 2012] [error] [client 127.0.0.1] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/ephp.home/Ephp/fences/LayerC/methods/Variables.php on line 39
+[Tue Mar 20 01:22:20 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined variable: rout in /home/ephp.home/Ephp/fences/LayerC/LayerC.php on line 15
+[Tue Mar 20 01:22:20 2012] [error] [client 127.0.0.1] PHP Fatal error:  Call to a member function getTemplate() on a non-object in /home/ephp.home/Ephp/fences/LayerC/LayerC.php on line 15
+[Tue Mar 20 01:22:34 2012] [error] [client 127.0.0.1] PHP Fatal error:  Call to undefined method Ephp\\Route\\Route::getTemplate() in /home/ephp.home/Ephp/fences/LayerC/LayerC.php on line 15
+[Tue Mar 20 20:57:39 2012] [error] [client 127.0.0.1] File does not exist: /home/ephp.home/web/favicon.ico
+[Tue Mar 20 20:57:39 2012] [error] [client 127.0.0.1] File does not exist: /home/ephp.home/web/favicon.ico
+[Tue Mar 20 21:03:06 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined variable: route in /home/ephp.home/Ephp/fences/Ephp/Route/Route.php on line 23
+[Tue Mar 20 21:03:06 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined variable: route in /home/ephp.home/Ephp/fences/Ephp/Route/Route.php on line 23
+[Tue Mar 20 21:08:35 2012] [error] [client 127.0.0.1] PHP Parse error:  syntax error, unexpected '}' in /home/ephp.home/Ephp/fences/Ephp/Route/Route.php on line 25
+[Tue Mar 20 21:09:02 2012] [error] [client 127.0.0.1] PHP Parse error:  syntax error, unexpected '}' in /home/ephp.home/Ephp/fences/Ephp/Route/Route.php on line 26
+[Tue Mar 20 21:09:19 2012] [error] [client 127.0.0.1] PHP Parse error:  syntax error, unexpected '}' in /home/ephp.home/Ephp/fences/Ephp/Route/Route.php on line 28
+[Tue Mar 20 21:09:33 2012] [error] [client 127.0.0.1] PHP Parse error:  syntax error, unexpected '}' in /home/ephp.home/Ephp/fences/Ephp/Route/Route.php on line 29
+[Tue Mar 20 21:10:23 2012] [error] [client 127.0.0.1] PHP Parse error:  syntax error, unexpected '}' in /home/ephp.home/Ephp/fences/Ephp/Route/Route.php on line 27
+[Tue Mar 20 21:10:27 2012] [error] [client 127.0.0.1] PHP Parse error:  syntax error, unexpected '}' in /home/ephp.home/Ephp/fences/Ephp/Route/Route.php on line 29
+[Tue Mar 20 21:10:37 2012] [error] [client 127.0.0.1] PHP Parse error:  syntax error, unexpected '}' in /home/ephp.home/Ephp/fences/Ephp/Route/Route.php on line 29
+[Tue Mar 20 21:14:57 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined variable: tah in /home/ephp.home/Ephp/fences/LayerC/lib/Translate.php on line 98
+[Tue Mar 20 21:15:09 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: end in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 48
+[Tue Mar 20 21:15:26 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: end in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 48
+[Tue Mar 20 21:15:37 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: end in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 48
+[Tue Mar 20 21:16:06 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: end in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 48
+[Tue Mar 20 21:16:20 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: end in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 48
+[Tue Mar 20 21:17:50 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: end in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 48
+[Tue Mar 20 21:18:43 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: end in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 48
+[Tue Mar 20 21:19:10 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: end in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 48
+[Tue Mar 20 21:33:43 2012] [error] [client 127.0.0.1] PHP Parse error:  syntax error, unexpected T_FOREACH, expecting T_FUNCTION in /home/ephp.home/Ephp/fences/LayerC/lib/Translate.php on line 45
+[Tue Mar 20 21:34:11 2012] [error] [client 127.0.0.1] PHP Parse error:  syntax error, unexpected T_FOREACH, expecting T_FUNCTION in /home/ephp.home/Ephp/fences/LayerC/lib/Translate.php on line 45
+[Tue Mar 20 21:34:13 2012] [error] [client 127.0.0.1] PHP Parse error:  syntax error, unexpected T_FOREACH, expecting T_FUNCTION in /home/ephp.home/Ephp/fences/LayerC/lib/Translate.php on line 45
+[Tue Mar 20 21:34:18 2012] [error] [client 127.0.0.1] PHP Parse error:  syntax error, unexpected T_FOREACH, expecting T_FUNCTION in /home/ephp.home/Ephp/fences/LayerC/lib/Translate.php on line 48
+[Tue Mar 20 21:34:33 2012] [error] [client 127.0.0.1] PHP Parse error:  syntax error, unexpected T_FOREACH, expecting T_FUNCTION in /home/ephp.home/Ephp/fences/LayerC/lib/Translate.php on line 48
+[Tue Mar 20 21:36:40 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: defaults in /home/ephp.home/Ephp/fences/Ephp/Route/Route.php on line 37, referer: http://ephp.home/
+[Tue Mar 20 21:36:40 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: defaults in /home/ephp.home/Ephp/fences/Ephp/Route/Route.php on line 38, referer: http://ephp.home/
+[Tue Mar 20 21:37:33 2012] [error] [client 127.0.0.1] PHP Fatal error:  Class 'WeMnid\\Controller\\ListController' not found in /home/ephp.home/Ephp/fences/Ephp/Ephp.php on line 24, referer: http://ephp.home/
+[Tue Mar 20 21:38:59 2012] [error] [client 127.0.0.1] PHP Fatal error:  Class 'WeMnid\\Controller\\Controll' not found in /home/ephp.home/Ephp/bin/WeMnid/Controller/ListController.php on line 9, referer: http://ephp.home/
+[Tue Mar 20 21:39:10 2012] [error] [client 127.0.0.1] PHP Fatal error:  Cannot redeclare class WeMnid\\Controller\\HomeController in /home/ephp.home/Ephp/bin/WeMnid/Controller/ListController.php on line 17, referer: http://ephp.home/
+[Tue Mar 20 21:39:22 2012] [error] [client 127.0.0.1] PHP Fatal error:  Call to undefined method WeMnid\\Controller\\ListController::IndexAction() in /home/ephp.home/Ephp/fences/Ephp/Ephp.php on line 26, referer: http://ephp.home/
+[Tue Mar 20 21:39:38 2012] [error] [client 127.0.0.1] PHP Warning:  file_get_contents(/home/ephp.home/Ephp/fences/LayerC/lib/../../../bin/WeMnid/view/list/index.html): failed to open stream: No such file or directory in /home/ephp.home/Ephp/fences/LayerC/lib/Loader.php on line 15, referer: http://ephp.home/
+[Tue Mar 20 21:39:38 2012] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/ephp.home/Ephp/fences/LayerC/methods/Conditional.php on line 16, referer: http://ephp.home/
+[Tue Mar 20 21:39:38 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined offset: 0 in /home/ephp.home/Ephp/fences/LayerC/lib/Translate.php on line 72, referer: http://ephp.home/
+[Tue Mar 20 21:39:38 2012] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/ephp.home/Ephp/fences/LayerC/methods/Conditional.php on line 41, referer: http://ephp.home/
+[Tue Mar 20 21:39:38 2012] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/ephp.home/Ephp/fences/LayerC/lib/Translate.php on line 33, referer: http://ephp.home/
+[Tue Mar 20 21:39:38 2012] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/ephp.home/Ephp/fences/LayerC/lib/Translate.php on line 37, referer: http://ephp.home/
+[Tue Mar 20 21:39:38 2012] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/ephp.home/Ephp/fences/LayerC/lib/Translate.php on line 41, referer: http://ephp.home/
+[Tue Mar 20 21:39:38 2012] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/ephp.home/Ephp/fences/LayerC/lib/Translate.php on line 48, referer: http://ephp.home/
+[Tue Mar 20 21:40:03 2012] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/ephp.home/Ephp/fences/LayerC/methods/Conditional.php on line 16, referer: http://ephp.home/
+[Tue Mar 20 21:40:03 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined offset: 0 in /home/ephp.home/Ephp/fences/LayerC/lib/Translate.php on line 72, referer: http://ephp.home/
+[Tue Mar 20 21:40:03 2012] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/ephp.home/Ephp/fences/LayerC/methods/Conditional.php on line 41, referer: http://ephp.home/
+[Tue Mar 20 21:40:03 2012] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/ephp.home/Ephp/fences/LayerC/lib/Translate.php on line 33, referer: http://ephp.home/
+[Tue Mar 20 21:40:03 2012] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/ephp.home/Ephp/fences/LayerC/lib/Translate.php on line 37, referer: http://ephp.home/
+[Tue Mar 20 21:40:03 2012] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/ephp.home/Ephp/fences/LayerC/lib/Translate.php on line 41, referer: http://ephp.home/
+[Tue Mar 20 21:40:03 2012] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/ephp.home/Ephp/fences/LayerC/lib/Translate.php on line 48, referer: http://ephp.home/
+[Tue Mar 20 21:40:32 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: PIECES in /home/ephp.home/Ephp/fences/LayerC/lib/Translate.php on line 71, referer: http://ephp.home/
+[Tue Mar 20 21:40:32 2012] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/ephp.home/Ephp/fences/LayerC/methods/Conditional.php on line 16, referer: http://ephp.home/
+[Tue Mar 20 21:40:32 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined offset: 0 in /home/ephp.home/Ephp/fences/LayerC/lib/Translate.php on line 72, referer: http://ephp.home/
+[Tue Mar 20 21:40:32 2012] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/ephp.home/Ephp/fences/LayerC/methods/Conditional.php on line 41, referer: http://ephp.home/
+[Tue Mar 20 21:40:32 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: PIECES in /home/ephp.home/Ephp/fences/LayerC/lib/Translate.php on line 33, referer: http://ephp.home/
+[Tue Mar 20 21:40:32 2012] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/ephp.home/Ephp/fences/LayerC/lib/Translate.php on line 33, referer: http://ephp.home/
+[Tue Mar 20 21:40:32 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: PIECES in /home/ephp.home/Ephp/fences/LayerC/lib/Translate.php on line 37, referer: http://ephp.home/
+[Tue Mar 20 21:40:32 2012] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/ephp.home/Ephp/fences/LayerC/lib/Translate.php on line 37, referer: http://ephp.home/
+[Tue Mar 20 21:40:32 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: PIECES in /home/ephp.home/Ephp/fences/LayerC/lib/Translate.php on line 41, referer: http://ephp.home/
+[Tue Mar 20 21:40:32 2012] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/ephp.home/Ephp/fences/LayerC/lib/Translate.php on line 41, referer: http://ephp.home/
+[Tue Mar 20 21:40:32 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: PIECES in /home/ephp.home/Ephp/fences/LayerC/lib/Translate.php on line 86, referer: http://ephp.home/
+[Tue Mar 20 21:40:32 2012] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 59, referer: http://ephp.home/
+[Tue Mar 20 21:40:32 2012] [error] [client 127.0.0.1] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/ephp.home/Ephp/fences/LayerC/methods/Variables.php on line 39, referer: http://ephp.home/
+[Tue Mar 20 21:41:12 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: PIECES in /home/ephp.home/Ephp/fences/LayerC/lib/Translate.php on line 71, referer: http://ephp.home/
+[Tue Mar 20 21:41:12 2012] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/ephp.home/Ephp/fences/LayerC/methods/Conditional.php on line 16, referer: http://ephp.home/
+[Tue Mar 20 21:41:12 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined offset: 0 in /home/ephp.home/Ephp/fences/LayerC/lib/Translate.php on line 72, referer: http://ephp.home/
+[Tue Mar 20 21:41:12 2012] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/ephp.home/Ephp/fences/LayerC/methods/Conditional.php on line 41, referer: http://ephp.home/
+[Tue Mar 20 21:41:12 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: PIECES in /home/ephp.home/Ephp/fences/LayerC/lib/Translate.php on line 33, referer: http://ephp.home/
+[Tue Mar 20 21:41:12 2012] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/ephp.home/Ephp/fences/LayerC/lib/Translate.php on line 33, referer: http://ephp.home/
+[Tue Mar 20 21:41:12 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: PIECES in /home/ephp.home/Ephp/fences/LayerC/lib/Translate.php on line 37, referer: http://ephp.home/
+[Tue Mar 20 21:41:12 2012] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/ephp.home/Ephp/fences/LayerC/lib/Translate.php on line 37, referer: http://ephp.home/
+[Tue Mar 20 21:41:12 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: PIECES in /home/ephp.home/Ephp/fences/LayerC/lib/Translate.php on line 41, referer: http://ephp.home/
+[Tue Mar 20 21:41:12 2012] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/ephp.home/Ephp/fences/LayerC/lib/Translate.php on line 41, referer: http://ephp.home/
+[Tue Mar 20 21:41:12 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: PIECES in /home/ephp.home/Ephp/fences/LayerC/lib/Translate.php on line 86, referer: http://ephp.home/
+[Tue Mar 20 21:41:12 2012] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 59, referer: http://ephp.home/
+[Tue Mar 20 21:41:12 2012] [error] [client 127.0.0.1] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/ephp.home/Ephp/fences/LayerC/methods/Variables.php on line 39, referer: http://ephp.home/
+[Tue Mar 20 21:41:49 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: PIECES in /home/ephp.home/Ephp/fences/LayerC/lib/Translate.php on line 74, referer: http://ephp.home/
+[Tue Mar 20 21:41:49 2012] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/ephp.home/Ephp/fences/LayerC/methods/Conditional.php on line 16, referer: http://ephp.home/
+[Tue Mar 20 21:41:49 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined offset: 0 in /home/ephp.home/Ephp/fences/LayerC/lib/Translate.php on line 75, referer: http://ephp.home/
+[Tue Mar 20 21:41:49 2012] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/ephp.home/Ephp/fences/LayerC/methods/Conditional.php on line 41, referer: http://ephp.home/
+[Tue Mar 20 21:41:49 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined variable: tags in /home/ephp.home/Ephp/fences/LayerC/lib/Translate.php on line 33, referer: http://ephp.home/
+[Tue Mar 20 21:41:49 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: PIECES in /home/ephp.home/Ephp/fences/LayerC/lib/Translate.php on line 89, referer: http://ephp.home/
+[Tue Mar 20 21:41:49 2012] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 59, referer: http://ephp.home/
+[Tue Mar 20 21:41:49 2012] [error] [client 127.0.0.1] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/ephp.home/Ephp/fences/LayerC/methods/Variables.php on line 39, referer: http://ephp.home/
+[Tue Mar 20 21:41:57 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: PIECES in /home/ephp.home/Ephp/fences/LayerC/lib/Translate.php on line 74, referer: http://ephp.home/
+[Tue Mar 20 21:41:57 2012] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/ephp.home/Ephp/fences/LayerC/methods/Conditional.php on line 16, referer: http://ephp.home/
+[Tue Mar 20 21:41:57 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined offset: 0 in /home/ephp.home/Ephp/fences/LayerC/lib/Translate.php on line 75, referer: http://ephp.home/
+[Tue Mar 20 21:41:57 2012] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/ephp.home/Ephp/fences/LayerC/methods/Conditional.php on line 41, referer: http://ephp.home/
+[Tue Mar 20 21:41:57 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: PIECES in /home/ephp.home/Ephp/fences/LayerC/lib/Translate.php on line 33, referer: http://ephp.home/
+[Tue Mar 20 21:41:57 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: PIECES in /home/ephp.home/Ephp/fences/LayerC/lib/Translate.php on line 89, referer: http://ephp.home/
+[Tue Mar 20 21:41:57 2012] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 59, referer: http://ephp.home/
+[Tue Mar 20 21:41:57 2012] [error] [client 127.0.0.1] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/ephp.home/Ephp/fences/LayerC/methods/Variables.php on line 39, referer: http://ephp.home/
+[Tue Mar 20 21:42:23 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: PIECES in /home/ephp.home/Ephp/fences/LayerC/lib/Translate.php on line 74, referer: http://ephp.home/
+[Tue Mar 20 21:42:23 2012] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/ephp.home/Ephp/fences/LayerC/methods/Conditional.php on line 16, referer: http://ephp.home/
+[Tue Mar 20 21:42:23 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined offset: 0 in /home/ephp.home/Ephp/fences/LayerC/lib/Translate.php on line 75, referer: http://ephp.home/
+[Tue Mar 20 21:42:23 2012] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/ephp.home/Ephp/fences/LayerC/methods/Conditional.php on line 41, referer: http://ephp.home/
+[Tue Mar 20 21:42:23 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: PIECES in /home/ephp.home/Ephp/fences/LayerC/lib/Translate.php on line 89, referer: http://ephp.home/
+[Tue Mar 20 21:42:23 2012] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 59, referer: http://ephp.home/
+[Tue Mar 20 21:42:23 2012] [error] [client 127.0.0.1] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/ephp.home/Ephp/fences/LayerC/methods/Variables.php on line 39, referer: http://ephp.home/
+[Tue Mar 20 21:43:06 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: PIECES in /home/ephp.home/Ephp/fences/LayerC/lib/Translate.php on line 90, referer: http://ephp.home/
+[Tue Mar 20 21:43:06 2012] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 59, referer: http://ephp.home/
+[Tue Mar 20 21:43:06 2012] [error] [client 127.0.0.1] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/ephp.home/Ephp/fences/LayerC/methods/Variables.php on line 39, referer: http://ephp.home/
+[Tue Mar 20 21:55:22 2012] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 59, referer: http://ephp.home/
+[Tue Mar 20 21:55:22 2012] [error] [client 127.0.0.1] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/ephp.home/Ephp/fences/LayerC/methods/Variables.php on line 39, referer: http://ephp.home/
+[Tue Mar 20 21:56:21 2012] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 59, referer: http://ephp.home/
+[Tue Mar 20 21:56:21 2012] [error] [client 127.0.0.1] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/ephp.home/Ephp/fences/LayerC/methods/Variables.php on line 39, referer: http://ephp.home/
+[Tue Mar 20 21:59:57 2012] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 60, referer: http://ephp.home/
+[Tue Mar 20 21:59:57 2012] [error] [client 127.0.0.1] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/ephp.home/Ephp/fences/LayerC/methods/Variables.php on line 39, referer: http://ephp.home/
+[Tue Mar 20 22:00:31 2012] [error] [client 127.0.0.1] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/ephp.home/Ephp/fences/LayerC/methods/Variables.php on line 39, referer: http://ephp.home/
+[Tue Mar 20 22:04:25 2012] [error] [client 127.0.0.1] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/ephp.home/Ephp/fences/LayerC/methods/Variables.php on line 39, referer: http://ephp.home/
+[Tue Mar 20 22:06:03 2012] [error] [client 127.0.0.1] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/ephp.home/Ephp/fences/LayerC/methods/Variables.php on line 39, referer: http://ephp.home/
+[Tue Mar 20 22:06:07 2012] [error] [client 127.0.0.1] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/ephp.home/Ephp/fences/LayerC/methods/Variables.php on line 39, referer: http://ephp.home/
+[Tue Mar 20 22:06:15 2012] [error] [client 127.0.0.1] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/ephp.home/Ephp/fences/LayerC/methods/Variables.php on line 39, referer: http://ephp.home/
+[Tue Mar 20 22:06:18 2012] [error] [client 127.0.0.1] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/ephp.home/Ephp/fences/LayerC/methods/Variables.php on line 39, referer: http://ephp.home/
+[Tue Mar 20 22:06:21 2012] [error] [client 127.0.0.1] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/ephp.home/Ephp/fences/LayerC/methods/Variables.php on line 39, referer: http://ephp.home/
+[Tue Mar 20 22:07:02 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined variable: var in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 33, referer: http://ephp.home/
+[Tue Mar 20 22:07:02 2012] [error] [client 127.0.0.1] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/ephp.home/Ephp/fences/LayerC/methods/Variables.php on line 39, referer: http://ephp.home/
+[Tue Mar 20 22:09:42 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined offset: 0 in /home/ephp.home/Ephp/fences/LayerC/lib/Translate.php on line 74, referer: http://ephp.home/
+[Tue Mar 20 22:09:42 2012] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/ephp.home/Ephp/fences/LayerC/methods/Conditional.php on line 41, referer: http://ephp.home/
+[Tue Mar 20 22:09:42 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 65, referer: http://ephp.home/
+[Tue Mar 20 22:09:42 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 70, referer: http://ephp.home/
+[Tue Mar 20 22:09:42 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 65, referer: http://ephp.home/
+[Tue Mar 20 22:09:42 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 70, referer: http://ephp.home/
+[Tue Mar 20 22:10:09 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined offset: 0 in /home/ephp.home/Ephp/fences/LayerC/lib/Translate.php on line 74, referer: http://ephp.home/
+[Tue Mar 20 22:10:09 2012] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/ephp.home/Ephp/fences/LayerC/methods/Conditional.php on line 41, referer: http://ephp.home/
+[Tue Mar 20 22:10:09 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 65, referer: http://ephp.home/
+[Tue Mar 20 22:10:09 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 70, referer: http://ephp.home/
+[Tue Mar 20 22:10:09 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 65, referer: http://ephp.home/
+[Tue Mar 20 22:10:09 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 70, referer: http://ephp.home/
+[Tue Mar 20 22:10:11 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined offset: 0 in /home/ephp.home/Ephp/fences/LayerC/lib/Translate.php on line 74, referer: http://ephp.home/
+[Tue Mar 20 22:10:11 2012] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/ephp.home/Ephp/fences/LayerC/methods/Conditional.php on line 41, referer: http://ephp.home/
+[Tue Mar 20 22:10:11 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 65, referer: http://ephp.home/
+[Tue Mar 20 22:10:11 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 70, referer: http://ephp.home/
+[Tue Mar 20 22:10:11 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 65, referer: http://ephp.home/
+[Tue Mar 20 22:10:11 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 70, referer: http://ephp.home/
+[Tue Mar 20 22:10:36 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined offset: 0 in /home/ephp.home/Ephp/fences/LayerC/lib/Translate.php on line 76, referer: http://ephp.home/
+[Tue Mar 20 22:10:36 2012] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/ephp.home/Ephp/fences/LayerC/methods/Conditional.php on line 41, referer: http://ephp.home/
+[Tue Mar 20 22:10:36 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 65, referer: http://ephp.home/
+[Tue Mar 20 22:10:36 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 70, referer: http://ephp.home/
+[Tue Mar 20 22:10:36 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 65, referer: http://ephp.home/
+[Tue Mar 20 22:10:36 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 70, referer: http://ephp.home/
+[Tue Mar 20 22:10:53 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined offset: 0 in /home/ephp.home/Ephp/fences/LayerC/lib/Translate.php on line 77, referer: http://ephp.home/
+[Tue Mar 20 22:10:53 2012] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/ephp.home/Ephp/fences/LayerC/methods/Conditional.php on line 41, referer: http://ephp.home/
+[Tue Mar 20 22:10:53 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 65, referer: http://ephp.home/
+[Tue Mar 20 22:10:53 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 70, referer: http://ephp.home/
+[Tue Mar 20 22:10:53 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 65, referer: http://ephp.home/
+[Tue Mar 20 22:10:53 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 70, referer: http://ephp.home/
+[Tue Mar 20 22:11:04 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined offset: 0 in /home/ephp.home/Ephp/fences/LayerC/lib/Translate.php on line 77, referer: http://ephp.home/
+[Tue Mar 20 22:11:04 2012] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/ephp.home/Ephp/fences/LayerC/methods/Conditional.php on line 41, referer: http://ephp.home/
+[Tue Mar 20 22:11:04 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 65, referer: http://ephp.home/
+[Tue Mar 20 22:11:04 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 70, referer: http://ephp.home/
+[Tue Mar 20 22:11:04 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 65, referer: http://ephp.home/
+[Tue Mar 20 22:11:04 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 70, referer: http://ephp.home/
+[Tue Mar 20 22:11:26 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined offset: 0 in /home/ephp.home/Ephp/fences/LayerC/lib/Translate.php on line 77, referer: http://ephp.home/
+[Tue Mar 20 22:11:26 2012] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/ephp.home/Ephp/fences/LayerC/methods/Conditional.php on line 41, referer: http://ephp.home/
+[Tue Mar 20 22:11:26 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 65, referer: http://ephp.home/
+[Tue Mar 20 22:11:26 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 70, referer: http://ephp.home/
+[Tue Mar 20 22:11:26 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 65, referer: http://ephp.home/
+[Tue Mar 20 22:11:26 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 70, referer: http://ephp.home/
+[Tue Mar 20 22:12:10 2012] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/ephp.home/Ephp/fences/LayerC/methods/Conditional.php on line 41, referer: http://ephp.home/
+[Tue Mar 20 22:12:10 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 65, referer: http://ephp.home/
+[Tue Mar 20 22:12:10 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 70, referer: http://ephp.home/
+[Tue Mar 20 22:12:10 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 65, referer: http://ephp.home/
+[Tue Mar 20 22:12:10 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 70, referer: http://ephp.home/
+[Tue Mar 20 22:12:42 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 65, referer: http://ephp.home/
+[Tue Mar 20 22:12:42 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 70, referer: http://ephp.home/
+[Tue Mar 20 22:12:42 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 65, referer: http://ephp.home/
+[Tue Mar 20 22:12:42 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 70, referer: http://ephp.home/
+[Tue Mar 20 22:16:52 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 66, referer: http://ephp.home/
+[Tue Mar 20 22:16:52 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 71, referer: http://ephp.home/
+[Tue Mar 20 22:16:52 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 66, referer: http://ephp.home/
+[Tue Mar 20 22:16:52 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 71, referer: http://ephp.home/
+[Tue Mar 20 22:16:54 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 66, referer: http://ephp.home/
+[Tue Mar 20 22:16:54 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 71, referer: http://ephp.home/
+[Tue Mar 20 22:16:54 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 66, referer: http://ephp.home/
+[Tue Mar 20 22:16:54 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 71, referer: http://ephp.home/
+[Tue Mar 20 22:18:00 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 66, referer: http://ephp.home/
+[Tue Mar 20 22:18:00 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 71, referer: http://ephp.home/
+[Tue Mar 20 22:18:00 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 66, referer: http://ephp.home/
+[Tue Mar 20 22:18:00 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 71, referer: http://ephp.home/
+[Tue Mar 20 22:18:40 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 68, referer: http://ephp.home/
+[Tue Mar 20 22:18:40 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 73, referer: http://ephp.home/
+[Tue Mar 20 22:18:40 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 68, referer: http://ephp.home/
+[Tue Mar 20 22:18:40 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 73, referer: http://ephp.home/
+[Tue Mar 20 22:18:57 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 67, referer: http://ephp.home/
+[Tue Mar 20 22:18:57 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 72, referer: http://ephp.home/
+[Tue Mar 20 22:18:57 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 67, referer: http://ephp.home/
+[Tue Mar 20 22:18:57 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 72, referer: http://ephp.home/
+[Tue Mar 20 22:19:36 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 67, referer: http://ephp.home/
+[Tue Mar 20 22:19:36 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 72, referer: http://ephp.home/
+[Tue Mar 20 22:19:36 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 67, referer: http://ephp.home/
+[Tue Mar 20 22:19:36 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 72, referer: http://ephp.home/
+[Tue Mar 20 22:22:04 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 69, referer: http://ephp.home/
+[Tue Mar 20 22:22:04 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 74, referer: http://ephp.home/
+[Tue Mar 20 22:22:04 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 69, referer: http://ephp.home/
+[Tue Mar 20 22:22:04 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 74, referer: http://ephp.home/
+[Tue Mar 20 22:22:32 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 70, referer: http://ephp.home/
+[Tue Mar 20 22:22:32 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 75, referer: http://ephp.home/
+[Tue Mar 20 22:22:32 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 70, referer: http://ephp.home/
+[Tue Mar 20 22:22:32 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 75, referer: http://ephp.home/
+[Tue Mar 20 22:22:44 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 71, referer: http://ephp.home/
+[Tue Mar 20 22:22:44 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 76, referer: http://ephp.home/
+[Tue Mar 20 22:22:44 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 71, referer: http://ephp.home/
+[Tue Mar 20 22:22:44 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 76, referer: http://ephp.home/
+[Tue Mar 20 22:23:48 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 75, referer: http://ephp.home/
+[Tue Mar 20 22:23:48 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 80, referer: http://ephp.home/
+[Tue Mar 20 22:23:48 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 75, referer: http://ephp.home/
+[Tue Mar 20 22:23:48 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined index: text in /home/ephp.home/Ephp/fences/LayerC/methods/Extend.php on line 80, referer: http://ephp.home/
+[Tue Mar 20 22:49:26 2012] [error] [client 127.0.0.1] File does not exist: /home/ephp.home/web/favicon.ico
+[Tue Mar 20 22:49:29 2012] [error] [client 127.0.0.1] File does not exist: /home/ephp.home/web/favicon.ico
