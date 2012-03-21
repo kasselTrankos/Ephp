@@ -1,7 +1,7 @@
 <?php
 	namespace Ephp;
 	use Ephp\Route\Route;
-	use layerC\layerC;
+	use LayerC\LayerC;
 	class Ephp
 	{
 		private $route, $controller, $bin, $layerC;

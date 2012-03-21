@@ -14,7 +14,8 @@ class Translate
 	private $methods=array(
 		'extends' => array('reg'=>'/\{\{\s*extends\s*\'(.+)\'\s*\}\}/', 'func'=>'_Extends')
 	);
-	private $pieces=array(
+	private $pieces=array
+	(
 		'include'=>array('reg'=>'/\{\%\s*include\s*\'(.+)\'\s*\%\}/', 'func'=>'_Include'),
 		'asset' =>array('reg'=>'/\{\%\s*asset\s*\(\'(.+)\'\)\s*\%\}/', 'func'=>'_Asset'),
 		'route' =>array('reg'=>'/\{\%\s*route\s*\(\'(.+)\'\)\s*\%\}/', 'func'=>'_Route'),

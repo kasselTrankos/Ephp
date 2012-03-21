@@ -17,4 +17,5 @@ class LayerC
 		$loader= new Translate(Loader::load($route->template()), $route, $vars);
 	}
 }
+
 ?>

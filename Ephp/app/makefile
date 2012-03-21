@@ -1,1 +1,1 @@
--libs /Ephp /sfYaml/lib /LayerC -routes app/routes.yml -bin /WeMnid
+-libs Ephp[Ephp] sfYaml[sfYaml/lib] LayerC[LayerC] -routes app/routes.yml -bin WeMnid[WeMnid]

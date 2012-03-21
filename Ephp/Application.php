@@ -1,7 +1,7 @@
 <?php
 
 namespace Ephp;
-require_once __DIR__.'/lib/loader/ClassLoader.php';
+
 require_once __DIR__.'/lib/loader/Configuration.php';
 
 
@@ -22,7 +22,7 @@ class Application
     	
     	$config = new Configuration();
     	$config->load();
-    	$ephp=new Ephp($config->getRouting(TRUE), $config->getBin());
+    	$ephp = new Ephp($config->getRouting(TRUE), $config->getBin());
      
     }
 }

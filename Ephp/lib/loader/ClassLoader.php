@@ -1,51 +1,60 @@
 <?php
-
 	namespace Ephp;
-
+	///require_once '/home/ephp.home/Ephp/lib/loader/../../fences/Ephp/Ephp.php';
 	class ClassLoader
 	{
-		private static $ins=NULL;
-		private $folder= '';
-		public function __construct(){
-			$this->folder=__DIR__.$this->folder;
+		private $_fileExtension = '.php';
+		protected $namespaces = array();
+		protected $prefixes = array();
+		private $_namespace;
+    private $_includePath;
+    private $_namespaceSeparator = '\\';
+
+		public function getNamespaces()
+		{
+			return $this->namespaces;
+		}
+		//Carga de las clases
+		public function registerNamespaces($namespaces)
+		{
+			foreach($namespaces as $ns=>$path)
+				$this->registerNamespace($ns, $path);
+		}
+		public function registerNamespace($namespace, $path)
+		{
+			if(isset($this->namespaces[$namespace])){
+				$path = array_merge($this->namespaces[$namespace], $path);
+			}
+			$this->namespaces[$namespace] = $path;
 		}
 
-		public static function load($bin, $folder='')
+		public function register()
 		{
-			if(ClassLoader::$ins==NULL) ClassLoader::$ins=new ClassLoader();
-			$files=ClassLoader::$ins->loader($folder.$bin);
+
 			
-			foreach ($files as $file) require_once $file;
+			
+			spl_autoload_register(array($this, 'loadClass'), true, false);	
+			//$fun = spl_autoload_functions();
+			//print_r($fun);
+		}	
+		public function loadClass($className){
+
+			if (null === $this->_namespace || $this->_namespace.$this->_namespaceSeparator === substr($className, 0, strlen($this->_namespace.$this->_namespaceSeparator))) {
+            $fileName = '';
+            $namespace = '';
+            $path = '';
+            if (false !== ($lastNsPos = strpos($className, $this->_namespaceSeparator))) 
+            {
+                $namespace = substr($className, 0, $lastNsPos);
+                $path =$this->namespaces[$namespace];
+                $className = substr($className, $lastNsPos + 1);
+                $fileName = str_replace($this->_namespaceSeparator, DIRECTORY_SEPARATOR, $namespace) . DIRECTORY_SEPARATOR;
+
+            }
+            $fileName .= str_replace('_', DIRECTORY_SEPARATOR, $className) . $this->_fileExtension;
+            $fileName = str_replace('\\', DIRECTORY_SEPARATOR, $fileName);
+            require ($this->_includePath !== null ? $this->_includePath . DIRECTORY_SEPARATOR : '').$path.'/' . $fileName;
+        }
 		}
-		private function loader($root = '.', $loadconfig=FALSE){
-			$files  = array('files'=>array(), 'dirs'=>array());
-		  	$directories  = array();
-		  	$last_letter  = $root[strlen($root)-1];
-		  	$root  = ($last_letter == '\\' || $last_letter == '/') ? $root : $root.DIRECTORY_SEPARATOR;
-		 
-		  	$directories[]  = $root;
-		 
-		  	while (sizeof($directories)) {
-		    	$dir  = array_pop($directories);
-		    	if ($handle = opendir($dir)) {
-		      		while (false !== ($file = readdir($handle))) {
-		        		if ($file == '.' || $file == '..') {
-		          		continue;
-		        		}
-		        		$file  = $dir.$file;
-		        		if (is_dir($file)) {
-		          			$directory_path = $file.DIRECTORY_SEPARATOR;
-		          			array_push($directories, $directory_path);
-		          			$files['dirs'][]  = $directory_path;
-		        		} elseif (is_file($file) && $ext=preg_match('/.+\.php$/', $file)) {
-		          			$files['files'][]  = $file;
-		        		}
-		      		}
-		      		closedir($handle);
-		    	}
-			}
-		 
-		  return $files["files"];
-		} 		
 	}
 ?>

@@ -8,7 +8,8 @@ class CleanRoute{
 	public static function clean($route){
 		$r=array();
 		$route = CleanRoute::putInOrder($route);
-		foreach ($route as $k=>$v) {
+		foreach ($route as $k=>$v) 
+		{
 			$r[$k]=array();
 			foreach($v as $key=>$val){
 				if(!CleanRoute::isRepeat($r, $val["pattern"])) $r[$k][$key]=$val; 

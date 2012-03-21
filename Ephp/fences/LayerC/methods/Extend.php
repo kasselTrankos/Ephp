@@ -48,11 +48,9 @@
 				foreach ($pairs as $p) 
 				{					
 					if(preg_match('/'.preg_quote($p['start']['item']['text'], '/ ').'/', $f['text']))
-					{			
-						
+					{	
 						$re = $this->GetReplace($p['start'], $p['end']);
-						$this->html = preg_replace('/'.preg_quote($f['text'], '/ ').'/', $re, $this->html);
-						
+						$this->html = preg_replace('/'.preg_quote($f['text'], '/ ').'/', $re, $this->html);						
 					}
 				}
 			}

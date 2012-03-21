@@ -8,7 +8,8 @@
 	{
 		private $routing, $url, $tpl, $route, $controller;
 
-		public function __construct($routing, $bin){
+		public function __construct($routing, $bin)
+		{
 			$this->routing = CleanRoute::clean($routing);			
 			$this->url = new Url();
 			$this->find();
@@ -22,10 +23,7 @@
 		{
 			foreach ($this->routing as $item)
 				if($item[$name]) return $item[$name]['pattern'];
-
-
-			return NULL;
-			
+			return NULL;			
 		}
 		private function find($name=NULL)
 		{
