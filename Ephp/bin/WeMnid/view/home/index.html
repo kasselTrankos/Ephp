@@ -1,30 +1,16 @@
-{{extends 'WeMnid:layout'}}
+{%extends 'WeMnid:layout'%}
 {%piece 'js'%}
 	<script src='{%asset('WeMnid:js:main.js')%}'></script>
 {%endpiece%}
+{%piece 'style'%}
+	<link href="{% asset('WeMnid:style:style.css')%}" media="screen" rel="stylesheet" type="text/css">
+{%endpiece%}
 {%piece 'content'%}
-	<h1>Hola soy el content</h1>
-	<p>{{one}}</p>
-	<p>{{tres | capitalize }}</p>
-	{%is cond%}
-	{{'mhola lo voy cap' | capitalize}}
-	<p>yes is cond</p>
-	{%elseis%}
-	<p>not cond</p>
-	{%endis%}
-	<p>SEPARA</p>
-	{%is other=='noi'%}
-	<p>YES IT's</p>
-	{%elseis other=='ssi'%}
-	<p>ELSE OK</p>
-	{%elseis%}
-	<p>NOT IT's</p>
-	<p>{{one}} Encima me funciona<br/> ESTO SOY un TIO QUE lo comprende<br /> y le ha gustado la metodologia</p>
-	{%endis%}
-	despues de tanta prueba por din <a href="{%route('_list')%}">link</a>
-	<br />
+	<form method="post" action="{%route('_home')%}">
+		{{form.login.field('name')}}
+		{{form.login.field('pwd')}}
+	</form>
 {%endpiece%}
 {%piece 'footer'%}
-Soy un simple footer
 {%include 'WeMnid:module:footer'%}	
 {%endpiece%}

@@ -11,11 +11,12 @@ use Ephp\Form\lib\MyField;
 class InputText extends MyField 
 {
     
-    private $html="<input type=\"text\" value=\"\" name=\"{name}\" id=\"{id}\" />";
+    
     public function __construct($name, $form)
     {
-        $this->html = preg_replace('/\{name\}/' ,$form.'['.$name.']' ,$this->html);
-        $this->html = preg_replace('/\{id\}/' ,$form.'_'.$name ,$this->html);
+        $code = "<input type=\"text\" value=\"\" name=\"{name}\" id=\"{id}\" />";
+        $this->html = preg_replace('/\{name\}/' ,$form.'['.$name.']' ,$code);
+        $this->html = preg_replace('/\{id\}/' ,$form.'_'.$name ,$code   );
     }
     public function maxlength($val)
     {

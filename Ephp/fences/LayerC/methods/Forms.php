@@ -15,7 +15,6 @@ class Forms
 	{
 		$this->setForm($args);
 		$this->method($pattern);
-		//print_r($this->forms);
 	}
 	public function html ()
 	{
@@ -44,8 +43,8 @@ class Forms
 
 	}
 	private function getField($form, $name)
-	{		
-		$this->html = $form->getField($name);
+	{
+		$this->html = $form->getHtmlField($name);
 	}
 }
 ?>

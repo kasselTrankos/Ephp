@@ -14,7 +14,7 @@ class BaseFunctions
 	{
 		$this->html = $code;
 		$this->ARGS = $args;
-		$this->TAGS = $tags["TAGS"];
+		$this->TAGS = $tags;
 		$this->Execute();
 	}
 	protected function add_layerc_function($func)

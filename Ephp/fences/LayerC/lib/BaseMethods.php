@@ -11,7 +11,7 @@ class BaseMethods
 	public function __construct($code, $nodes, $route)
 	{
 		$this->code = $code;
-		$this->TAGS = $nodes["PRIVATE"];
+		$this->TAGS = $nodes;
 		$this->ROUTE = $route;
 		$this->Execute();
 

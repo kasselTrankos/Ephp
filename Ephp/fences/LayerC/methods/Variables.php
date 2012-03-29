@@ -15,6 +15,10 @@ class Variables
 	public function get(){
 		return $this->html;
 	}
+	public static function GetVariable($name, $args)
+	{
+		return (isset($args[$name])) ? $args[$name]:"NO EXISTE!!!!";
+	}
 	private function Replace($found, $code, $args)
 	{
 		if(preg_match_all($this->var, $found['text'], $m))

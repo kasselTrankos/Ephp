@@ -8,7 +8,7 @@ class LoginForm extends Form
 	{
 		parent::__construct($name);
 		$this->append("text", 'name')->maxlength(10)->value("test");
-		
+		$this->append("text", 'pwd')->maxlength(10)->value("test");
 
 	}
 

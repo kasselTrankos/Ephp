@@ -1,11 +1,13 @@
 <?php
 	namespace LayerC\methods;
 
+	use LayerC\methods\ILayerC;
+
 	use LayerC\lib\Loader;
 	use LayerC\lib\Lexer;
 	use LayerC\methods\Variables;
 
-	class Extend
+	class Extend implements ILayerC
 	{
 		private $code, $html, $match, $methods, $piece, $pairs;
 
@@ -14,37 +16,28 @@
 			'piece_end'=>'/\{\%\s*endpiece\s*\%\}/'
 		);
 
-		public function __construct(&$code, $tag, $match, $vars, $piece)
+		public function __construct()
 		{
-			$this->code = $code;
-			$this->piece = $piece;
-
-
-			$this->html = Loader::load($match[1]);
-			$c = new Lexer($this->html, $vars);
-			$this->methods = $c->get();
-			$this->Combine();
-			$this->Variables($vars);
+			
 			
 		}		
-		public function parent(){return $this->html;}
-
-		private function Variables($args)
-		{
-			//TODO: mostrar una exception propia?
-			if($args==NULL) return FALSE;
-
-			foreach ($this->methods['TAGS'] as $var) 
-			{				
-				$v = new Variables($this->html, $var, $args);
-				$this->html = $v->get();
-			}
-
+		public function Execute($code, $load, $tags){
+			$this->code = $code;
+			$this->piece = $tags;
+			$this->html = Loader::load($load);
+			$c = new Lexer($this->html);
+			$this->methods = $c->get();
+			$this->Combine();
+			return $this->get();
+			
 		}
+		public function get(){return $this->html;}
+
+		
 		private function Combine()
 		{
 			$pairs = $this->MakePairs();
-			foreach ($this->methods['PIECES'] as $f) {				
+			foreach ($this->methods['PRIVATE'] as $f) {				
 				foreach ($pairs as $p) 
 				{					
 					if(preg_match('/'.preg_quote($p['start']['item']['text'], '/ ').'/', $f['text']))
@@ -76,15 +69,11 @@
 			}
 			return $f;
 		}
-		private function GetReplace($start, $end){
-			
-			$s = $start['item']['start']+$start['item']['length'];
-			$e = $end['start'];
-			$replace='';
-			for($i=$s; $i<$e; $i++)
-				$replace.=$this->code[$i];
-			return $replace;
-
+		private function GetReplace($start, $end)
+		{			
+			$_start = $start['item']['start']+$start['item']['length'];
+			$_end = $end['start']-$_start;
+			return substr($this->code, $_start, $_end);			
 		}
 
 	}

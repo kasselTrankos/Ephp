@@ -1,8 +1,8 @@
 <?php
 namespace LayerC\methods;
-use LayerC\methods\ILayerCMethod;
+use LayerC\methods\ILayerC;
 use LayerC\methods\BaseLayerCMethod;
-class Routes extends BaseLayerCMethod  implements ILayerCMethod
+class Routes extends BaseLayerCMethod  implements ILayerC
 {
 	private $html;
 

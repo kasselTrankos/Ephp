@@ -2,7 +2,7 @@
 namespace LayerC\lib;
 use LayerC\lib\Loader;
 class Lexer{
-	private $found, $vars, $html, $parent=NULL, $generateHTML='', $cursor, $end;
+	private $found, $html, $parent=NULL, $generateHTML='', $cursor, $end;
 
 	private $regex, $positions, $positionsbegin, $tokens;
 	private $state, $position = -1;
@@ -14,9 +14,8 @@ class Lexer{
 		'piece'	=> array('{%', '%}')
 
 	);
-	public function __construct($html, $vars){
-	
-		$this->vars = $vars;
+	public function __construct($html)
+	{
 		$this->html = $html;
 		$this->cursor = 0;
 		$this->regex=array(
@@ -29,7 +28,12 @@ class Lexer{
 		$this->make();
 		
 	}
-	public function get(){return $this->tokens;}
+	public function get($name = NULL)
+	{
+		if($name==NULL) return $this->tokens;
+		return (isset($this->tokens[$name])) ? $this->tokens[$name] : NULL;
+
+	}
 	private function make(){
 		preg_match_all($this->regex['lex_tokens_start'], $this->html, $matches, PREG_OFFSET_CAPTURE);
 		$this->positions = $matches[1];
@@ -99,7 +103,7 @@ class Lexer{
 
 		if(preg_match($this->regex['PIECES'], $this->html, $match, null, $this->cursor))
 		{
-			$this->tokens["PIECES"][]=array(
+			$this->tokens["PRIVATE"][]=array(
 				"start"=>$this->cursor,
 				"text"=>$match[0],
 				"length"=>strlen($match[0])

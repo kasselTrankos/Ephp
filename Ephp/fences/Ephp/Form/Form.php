@@ -25,8 +25,12 @@ class Form {
     {
         if($name==NULL) throw new \Exception("necesita un puto nombre");
         $f= $this->getField($field, $name);
-        $this->fields[] = $f;
+        $this->fields[$name] = $f;
         return $f;
+    }
+    public function getName(){return $this->name;}
+    public function getHtmlField($name){
+        return $this->fields[$name]->getField();
     }
 
 
@@ -41,7 +45,7 @@ class Form {
                 break;
         }
     }
-
+    
 
 
 

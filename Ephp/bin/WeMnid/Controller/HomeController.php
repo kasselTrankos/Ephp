@@ -15,12 +15,7 @@ class HomeController extends Controller
 
 		///print_r($this->get('server.name'));	
 		return array(
-			"one"=>"valor y al toro", 
-			"tres" => "prueba con esto y una function ",
-			"variable"=>"hola mundo!!!",
-			"cuatro" => " soy el  cuarto poder",
-			'cond'=>TRUE,
-			'other'=>	'si'
+			'login'=>$login
 
 		);
 	}
