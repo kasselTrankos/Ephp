@@ -1,1 +1,1 @@
--libs Ephp[Ephp] sfYaml[sfYaml/lib] LayerC[LayerC] Bycle[Bycle] -routes app/routes.yml -bin WeMnid[WeMnid]
+-libs Ephp[Ephp] sfYaml[sfYaml/lib] LayerC[LayerC] Bycle[Bycle] Annotation[Annotation/lib/Annotation] -routes app/routes.yml -bin WeMnid[WeMnid]
