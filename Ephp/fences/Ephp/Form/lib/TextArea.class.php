@@ -8,7 +8,7 @@
 class TextArea  extends BaseField{
     private $html="<textarea name=\"{name}\" id=\"{id}\">{value}</textarea>";
     
-    public function __construct($form, $name, $args, $submitted){
+    public function __construct($name){
         parent::__construct($form, $this->html, $name, $args, $submitted);
     }
     public function updateVal($value){

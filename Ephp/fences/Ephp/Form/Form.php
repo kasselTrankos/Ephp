@@ -1,9 +1,5 @@
 <?php
 namespace Ephp\Form;
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 
 /**
  * Description of Form
@@ -12,14 +8,18 @@ namespace Ephp\Form;
  */
 use Ephp\Form\core\ValidateForm;
 use Ephp\Form\lib\InputText;
+use sfYaml\sfYaml;
+use Ephp\session\Session;
+use Ephp\Form\Validation\Validation;
 
-class Form {
+class Form 
+{
     
-    private $name="form", $fields=array();
+    private $name="form", $fields=array(), $request= NULL, $errors;
     
     public function __construct($name="")
     {        
-        $this->name=$name;        
+        $this->name=$name;       
     }
     public function append($field, $name=NULL)
     {
@@ -29,10 +29,7 @@ class Form {
         return $f;
     }
     public function getName(){return $this->name;}
-    public function getHtmlField($name){
-        return $this->fields[$name]->getField();
-    }
-
+    public function getHtmlField($name){return $this->fields[$name]->getField();}
 
     private function getField($field, $name){
         switch ($field) {
@@ -44,6 +41,33 @@ class Form {
                 # code...
                 break;
         }
+    }
+
+    public function isSubmitted(){
+        return ((isset($_POST) && !empty ($_POST)) || (isset($_FILES) && !empty($_FILES)));
+    }
+    public function isValid()
+    {
+        $file = __DIR__.'/../../../bin/'.Session::get("fence").'/app/validation.yml';
+        
+        if(file_exists($file)) 
+        {
+            $yml = sfYaml::load($file);
+            $class = (string)get_called_class();
+            
+            if(isset($yml[$class]))
+            {
+                $validate = new Validation($this->request[$this->name], $yml[$class]);
+                $this->errors = $validate->valid($this);
+                return $this->errors;
+            }
+            return TRUE;    
+        }
+        return TRUE;
+    }
+    public function bind($req=NULL)
+    {
+        $this->request = $req;
     }
     
 

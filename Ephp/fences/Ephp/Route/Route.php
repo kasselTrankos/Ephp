@@ -6,7 +6,7 @@
 
 	class Route
 	{
-		private $routing, $url, $tpl, $route, $controller;
+		private $routing, $url, $tpl=NULL, $route, $controller;
 
 		public function __construct($routing, $bin)
 		{
@@ -19,6 +19,7 @@
 		public function server(){return $this->url;}
 		public function controller(){return $this->controller;}
 		public function template(){return $this->tpl;}
+
 		public function findByName($name)
 		{
 			foreach ($this->routing as $item)
@@ -28,12 +29,14 @@
 		private function find($name=NULL)
 		{
 			///$uri=($name!=NULL);
-			foreach ($this->routing as $item) {
-				foreach($item as $key=>$route){
+			foreach ($this->routing as $item) 
+			{
+				foreach($item as $key=>$route)
+				{
 					$pattern = '/'.addcslashes($route['pattern'], '/').'$/';					
 					if(preg_match($pattern, $this->url->getURI())) {	
 						$this->controller = $route['defaults']['controller'];
-						$this->tpl = $route['defaults']['template'];
+						$this->tpl = (isset($route['defaults']['template'])) ? $route['defaults']['template']: NULL;
 						$this->route[$key] = $route;
 					}
 				}

@@ -1,0 +1,4 @@
+## YAML Template.
+WeMnid\Form\LoginForm:
+  name:
+    Blank: No puede ir vacio

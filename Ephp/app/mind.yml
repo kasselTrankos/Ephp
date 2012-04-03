@@ -1,2 +1,6 @@
-fences:
-	Ephp: \Ephp
+datebase:
+  type: mysql
+  host: localhost
+  user: root
+  pwd: 33dead
+  db:  ephp
