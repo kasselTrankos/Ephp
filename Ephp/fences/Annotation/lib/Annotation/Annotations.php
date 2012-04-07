@@ -58,9 +58,11 @@ abstract class Annotations
    */
   public static function ofClass($class, $type=null)
   {
+      
     return self::getManager()->getClassAnnotations($class, $type);
   }
-  
+
+
   /**
    * Inspects method Annotations
    * @see AnnotationManager::getMethodAnnotations()

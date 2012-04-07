@@ -17,5 +17,6 @@ namespace Annotation;
  * This interface is mandatory for all Annotations.
  */
 interface IAnnotation {
-  public function initAnnotation($properties);
+  
+    public function initAnnotation($properties);
 }

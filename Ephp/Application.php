@@ -22,7 +22,7 @@ class Application
     	
     	$config = new Configuration();
     	$config->load();
-    	$ephp = new Ephp($config->getRouting(TRUE), $config->getBin());
+    	$ephp = new Ephp($config->getRouting(TRUE), $config->getBin(), $config->getNeighbors());
      
     }
 }

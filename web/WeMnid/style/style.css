@@ -1,2 +1,31 @@
-hmtl, body{background-color: #DDD;}
+hmtl, body{background: url('../img/9.png') #222;
+font-family: verdana, Arial; font-size: 12px; text-align: center;}
 *{margin: 0px; padding: 0px; list-style:none;}
+.clear{clear:both;}
+/*******************************************/
+#CONT{width: 970px; margin: 0px auto;}
+#login-cont{background: url('../img/2.png') repeat-x; min-height: 206px}
+#login-top {height: 210px; line-height: 209px; color:#c7bea9;}
+#login{width: 350px; margin: 0px auto; background: #d9d3c5;
+-webkit-border-radius: 6px; border: 1px solid #fff8e9; padding: 10px;
+-moz-border-radius: 6px; margin-top: 30px;
+border-radius: 6px; height:160px;
+-moz-box-shadow:    2px 3px 3px 3px #1a1916;
+  -webkit-box-shadow: 2px 3px 3px 3px #1a1916;
+  box-shadow:         0px 0px 1px 0px #7d776a;}
+#login .piece {float:left; margin: 6px;}
+#login form{ }
+#login .piece label{ width:110px; text-align: right; float: left; 
+margin-top: 4px; color: #45413a;}
+#login input{background: #F5F5F5;-webkit-border-radius: 2px;
+-moz-border-radius: 2px;border-color: #E7E7E7 #E7E7E7 #D7D7D7;
+border-radius: 2px;border-style: solid; float: right; margin-right: 63px;
+margin-top: 5px; cursor: pointer;
+    border-width: 1px;color: #777777; padding: 5px 8px; font-size: 11px;}
+#login .piece input{ float: left; margin-left: 6px;
+border: 0px;-webkit-border-radius: 4px; padding: 4px 5px;
+-moz-border-radius: 4px; font-size: 11px; color: #000; cursor: text;
+border-radius: 4px; background: #fff; margin-right: 0px; margin-top: 0px;}
+#login .piece.accept{margin-left: 130px;}
+#login .piece.accept label{width: auto; margin-left: 5px;}
+#login .piece.accept input{width: auto; margin-left: 5px; margin-top: 3px;}

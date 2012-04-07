@@ -1,0 +1,36 @@
+{%extends 'WeMnid:login'%}
+{%piece 'js'%}
+	<script src='{%asset('WeMnid:js:main.js')%}'></script>
+{%endpiece%}
+{%piece 'style'%}
+	<link href="{% asset('WeMnid:style:style.css')%}" media="screen" rel="stylesheet" type="text/css">
+{%endpiece%}
+{%piece 'content'%}
+<div id="login-cont">
+    <div id="login-top">
+        <h1>quien eres?</h1>
+    </div>
+    <div id="login">
+        <form method="post" action="{%route('_login')%}">
+            <div class="piece">
+                {{form.login.label('name')}}
+                {{form.login.field('name')}}
+            </div>
+            <div class="piece">
+                {{form.login.label('pwd')}}
+                {{form.login.field('pwd')}}
+            </div>
+            <div class="clear"></div>
+            <div class="piece accept">
+                {{form.login.field('accept')}}
+                 {{form.login.label('accept')}}
+            </div>
+            <div class="clear"></div>
+            <input type="submit" value="Registrate" />
+        </form>
+    </div>
+</div>
+{%endpiece%}
+{%piece 'footer'%}
+{%include 'WeMnid:module:footer'%}	
+{%endpiece%}

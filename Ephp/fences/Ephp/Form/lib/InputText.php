@@ -16,7 +16,8 @@ class InputText extends MyField
     {
         $code = "<input type=\"text\" value=\"\" name=\"{name}\" id=\"{id}\" />";
         $code = preg_replace('/\{name\}/' ,$form.'['.$name.']' ,$code);
-        $this->html = preg_replace('/\{id\}/' ,$form.'_'.$name ,$code   );
+        $this->html = preg_replace('/\{id\}/' ,$form.'_'.$name ,$code );
+        parent::__construct($name, $form);
     }
     public function maxlength($val)
     {

@@ -20,12 +20,14 @@ class Bycle extends BaseBycle
         $r = mysql_query($sql);
         $q = mysql_fetch_object($r);
         
-        if(!$q) return $q; 
+        if(!$q) return $q;
         foreach($q as $k=>$v)
-            $entity->{$k}='$v'; 
+            $entity->{$k}=$v; 
             
         $this->close();
+        
         return $entity;
+        
     }
     
     

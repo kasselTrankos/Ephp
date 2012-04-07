@@ -30,6 +30,8 @@ class AnnotationParser
   const NAME = 8;
   const COPY_LINE = 9;
   const COPY_ARRAY = 10;
+  const _AS = 11;
+  const _USE = 12;
   
   /**
    * @var boolean $debug Set to TRUE to enable HTML output for debugging
@@ -70,6 +72,9 @@ class AnnotationParser
     $nesting = 0;
     $class = null;
     $namespace = '';
+    $_use = '';
+    $_as = array();
+    $_uses = array();
     
     $VISIBILITY = array(T_PUBLIC, T_PRIVATE, T_PROTECTED, T_VAR);
     
@@ -81,10 +86,11 @@ class AnnotationParser
     foreach (token_get_all($source) as $token)
     {
       list($type, $str, $line) = is_array($token) ? $token : array(self::CHAR, $token, $line);
-      
+     //print_r($token); 
       switch ($state)
       {
         case self::SCAN:
+            
           if ($type==T_CLASS)
             $state = self::CLASS_NAME;
           if ($type==T_NAMESPACE)
@@ -92,8 +98,33 @@ class AnnotationParser
             $state = self::NAMESPACE_NAME;
             $namespace = '';
           }
+          if($type==T_USE)
+              $state = self::_USE;
         break;
-        
+        case self::_USE:
+            if ($type==T_STRING || $type==T_NS_SEPARATOR)
+            {
+                $_use .= $str;                
+            }else if($str=='as'){
+                $state = self::_AS;
+            }
+            else if ($str == ';')
+            {
+                $state = self::SCAN;
+                $_use = '';
+            }
+            break;
+        case self::_AS:
+          if ($type==T_STRING || $type==T_NS_SEPARATOR)
+          {
+              $_as[] = '/'.$str.'/';
+              $_uses[] = $_use;
+          }
+          else if ($str == ';')
+          {
+            $state = self::SCAN;
+          }
+        break;
         case self::NAMESPACE_NAME:
           if ($type==T_STRING || $type==T_NS_SEPARATOR)
           {
@@ -165,7 +196,7 @@ class AnnotationParser
       
       if ($type==T_COMMENT || $type==T_DOC_COMMENT)
       {
-        $annotations = array_merge($annotations, $this->findAnnotations($str));
+            $annotations = array_merge($annotations, $this->findAnnotations($str, $_uses, $_as));
       }
       
       if ($type==T_CURLY_OPEN)
@@ -174,7 +205,7 @@ class AnnotationParser
       if ($this->debug)
         echo "<tr><td>{$line}</td><td>".token_name($type)."</td><td>".htmlspecialchars($str)."</td><td>{$state}</td><td>{$nesting}</td></tr>\n";
     }
-    
+    //print_r($index);
     if ($this->debug)
       echo '</table>';
     
@@ -202,15 +233,16 @@ class AnnotationParser
   public function parseFile($path)
   {
     return $this->parse(file_get_contents($path), $path);
-  }
+  } 
   
   /**
    * Scan a PHP source code comment for annotation data
    * @param string $str PHP comment containing annotations
    * @return array PHP source code snippets with annotation initialization arrays
    */
-  protected function findAnnotations($str)
+  protected function findAnnotations($str, $_use, $_as)
   {
+    if(count($_as)>0 && count($_use)>0)$str = preg_replace($_as, $_use, $str);
     $str = trim(preg_replace('/^[\/\*\# \t]+/m', '', $str))."\n";
     $str = str_replace("\r\n", "\n", $str);
     
@@ -290,7 +322,6 @@ class AnnotationParser
     }
     
     $annotations = array();
-    
     foreach ($matches as $match)
     {
       $type = $this->manager->resolveName($match[0]);

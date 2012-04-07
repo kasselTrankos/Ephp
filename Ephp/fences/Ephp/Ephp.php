@@ -5,43 +5,57 @@ use Ephp\serialize\Serialize;
 use LayerC\LayerC;
 use Ephp\session\Session;
 use Ephp\Loader\Loader;
+use Annotation\Annotations;
+use Ring\Event;
+use Ring\EventListener;
+use Ephp\Fences\Fences;
+use Ephp\Event\NeighborsDispatcher;
 class Ephp
 {
-    private $route, $controller, $bin, $layerC;
-    private $loader, $bycle = NULL;
+    private $route, $controller, $layerC;
+    private $loader, $fences, $neighbors;
     
-    public function __construct($route, $bin=NULL)
+    public function __construct($route, $bin, $neighbors=NULL)
     {
+        
+        ////EventListener::Listener()->bind($evtController);
+        $this->fences = new Fences();
+        NeighborsDispatcher::Instance()->add($neighbors);
         $this->route = new Route($route, $bin);
+        $this->fences->Add("Route", $this->route);
         $this->loader = new Loader();
+        $this->fences->Add("loader", $this->loader);
         $this->Run();
     }
     
-    public function get($what){
-        return $this->loader->get($what);
-    }
-    public function setBycle($value){
-        $this->bycle = $value;
-    }
+    public function get($what){return $this->loader->get($what);}
+    public function route($name){return $this->route->findByName($name);}
     private function Run()
     {
-    $controller = $this->route->controller();
-
-    if ($controller){
-        list($namespace, $class, $method)=preg_split('/:/', $controller);
-
-        $session = new Session();
-        $session->Add("fence", $namespace);
-        $class.='Controller';
-        $method.='Action';
-        $c = $namespace.'\\Controller\\'.$class;
-        $this->controller = new $c($this);
-        $this->controller->server($this->route->server());
-        $vars = $this->controller->{$method}();
-        if($this->route->template()) $this->layerC = new layerC($this->route, $vars);
-    }else{
-        echo "nothing to load necesito un controllador";
-    }
+        
+        $controller = $this->route->controller();
+        
+        Annotations::$config['cachePath'] = __DIR__ . '/../../app/cache';
+        if ($controller)
+        {
+            list($namespace, $class, $method)=preg_split('/:/', $controller);        
+            $session = new Session();
+            $this->fences->Add("session", $session);
+            $session->Add("fence", $namespace);
+            $class.='Controller';
+            $method.='Action';
+            $c = $namespace.'\\Controller\\'.$class;
+            $this->controller = new $c($this);
+            $this->fences->Add("controller", $this->controller);
+            $this->controller->server($this->route->server());
+            $vars = $this->controller->{$method}();
+            //$evtController = new Event("on.loadController", array("controller"=>$this->controller));
+            NeighborsDispatcher::Instance()->run('on.loadController');
+            //EventListener::Listener()->dispatch($evtController, $evtController);
+            if($this->route->template()) $this->layerC = new layerC($this->route, $vars);
+        }else{
+            echo "nothing to load necesito un controllador";
+        }
 
             ///print_r($vars);
     }

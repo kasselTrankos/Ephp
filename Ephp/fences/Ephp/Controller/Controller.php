@@ -4,6 +4,7 @@ namespace Ephp\Controller;
 use Ephp\Request\Request;
 use Bycle\Bycle;
 use Bycle\Query\BycleQuery;
+use Ephp\Event\NeighborsDispatcher;
 
 class Controller
 {
@@ -25,15 +26,19 @@ class Controller
             return $this->server->get($val);
         if(preg_match('/bycle/', $val))
             return $this->getBycle();
+        if(preg_match('/^ring$/', $val))
+            return $this->getRing ();
+                
     }
+    public function getRing(){return NeighborsDispatcher::instance();}
     public function server($val){$this->server = $val;}
     public function getPost(){return $this->request->getPost();}
-    
+    public function Redirect($name){header("Location:".$this->ephp->route($name));}
     /////PRIVATE
     private function getBycle()
     {
         if($this->query==NULL)
-            $this->query = new BycleQuery($this->ephp->get("datebase"));
+            $this->query = new BycleQuery();
         return $this->query;
     }
 }

@@ -1,6 +1,9 @@
-_home:
+_login:
   pattern: /
-  defaults: {controller: WeMnid:Home:Index, template: WeMnid:home:index}
+  defaults: {controller: WeMnid:User:Login, template: WeMnid:user:login}
+_home:
+  pattern: /home
+  defaults: { controller: WeMnid:Home:Home, template: WeMnid:home:index}
 _validate_user:
   pattern: /_validate_user
   defaults: { controller: WeMnid:User:Valid}

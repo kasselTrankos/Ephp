@@ -3,10 +3,12 @@ namespace Ephp;
 require_once __DIR__.'/../../fences/sfYaml/lib/sfYaml.php';
 require_once __DIR__.'/../../fences/sfYaml/lib/sfYamlParser.php';
 require_once __DIR__.'/../../fences/sfYaml/lib/sfYamlInline.php';
+require_once __DIR__.'/../../fences/Ephp/Event/NeighborsLoader.php';
 
 require_once __DIR__.'/ClassLoader.php';
 
 use Ephp\ClassLoader;
+use Ephp\Event\NeighborsLoader;
 use sfYaml\sfYaml;
 
 
@@ -16,6 +18,7 @@ class Configuration
     private $libFolder='/../../fences';
     private $mainFolder='Ephp/';
     private $routing=array(), $bin=NULL;
+    private $neighbors = array();
 
     private $loader;
     
@@ -29,7 +32,9 @@ class Configuration
 
         $this->loader = ($loader==NULL)? new ClassLoader():$loader;
     }
-	public function getRouting($clean=FALSE){
+    public function getBin(){return $this->bin;}
+    public function getNeighbors(){return $this->neighbors;}
+    public function getRouting($clean=FALSE){
         if(!$clean)return $this->routing;
         foreach($this->bin[0] as $bin)
         {
@@ -38,7 +43,7 @@ class Configuration
         }
         return $this->routing;
     }
-    public function getBin(){return $this->bin;}
+    
     public function load()
     {
         try
@@ -70,7 +75,9 @@ class Configuration
 
         foreach ($lib[0] as $l) {
             preg_match('/(.+)\[(.+)\]/', $l, $item);
-            $this->loader->registerNamespace($item[1], $this->mainFolder.'fences');		
+            $this->loader->registerNamespace($item[1], $this->mainFolder.'fences'.$item[2]);
+            $neighbors = NeighborsLoader::load($this->mainFolder . 'fences/' . $item[1]);
+            if($neighbors != FALSE)$this->neighbors[$item[1]] = $neighbors;
         }
     }
     private function route($routes)
@@ -85,7 +92,7 @@ class Configuration
         foreach($bin[0] as $b)
         {
             preg_match('/(.+)\[(.+)\]/', $b, $item);            
-            $this->loader->registerNamespace($item[1], $this->mainFolder.'bin');
+            $this->loader->registerNamespace($item[1], $this->mainFolder.'bin'.$item[2]);
         }
         $this->loader->register();
     }

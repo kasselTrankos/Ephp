@@ -16,6 +16,7 @@ namespace Annotation;
 use \ReflectionClass;
 use \ReflectionMethod;
 use \ReflectionProperty;
+use Bycle\Entity\BycleEntity;
 
 /**
  * This class manages the retrieval of Annotations from source code files
@@ -279,6 +280,7 @@ class AnnotationManager
       $path = $reflection->getFileName();
       $specs = $this->getFileSpecs($path);
       
+      
       if (isset($specs[$key]))
       {
         $annotations = array();
@@ -286,7 +288,6 @@ class AnnotationManager
         foreach ($specs[$key] as $spec)
         {
           $type = array_shift($spec);
-          
           if (!class_exists($type, $this->autoload))
             throw new AnnotationException(__CLASS__."::getAnnotations() : annotation type {$type} not found");
           
@@ -294,11 +295,12 @@ class AnnotationManager
           if (!($annotation instanceof IAnnotation))
             throw new AnnotationException(__CLASS__."::getAnnotations() : annotation type {$type} does not implement the mandatory IAnnotation interface");
           
+          $usage = $this->getUsage($type);
+          
           $annotation->initAnnotation($spec);
           
           $annotations[] = $annotation;
         }
-        
         /*
         
         // This feature has been disabled in the 1.x branch of this library
@@ -350,9 +352,7 @@ class AnnotationManager
     foreach ($annotations as $outer=>$annotation)
     {
       $type = get_class($annotation);
-      
       $usage = $this->getUsage($type);
-      
       if (!$usage->$member)
         throw new AnnotationException(__CLASS__."::getAnnotations() : {$type} cannot be applied to a {$member}");
       
@@ -461,6 +461,11 @@ class AnnotationManager
     else
       return $this->filterAnnotations($this->getAnnotations($class), $type);
   }
+  private $query = null;
+  public function addQuery($query)
+  {
+    $this->query = $query;
+  }
   
   /**
    * Inspects Annotations applied to a given method
@@ -490,7 +495,7 @@ class AnnotationManager
       throw new AnnotationException(__CLASS__."::getMethodAnnotations() : undefined method {$class}::{$method}()");
     
     if ($type===null)
-      return $this->getAnnotations($class, 'method', $method);
+      return $this->getAnnoattions($class, 'method', $method);
     else
       return $this->filterAnnotations($this->getAnnotations($class, 'method', $method), $type);
   }

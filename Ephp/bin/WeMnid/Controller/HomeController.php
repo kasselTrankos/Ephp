@@ -5,34 +5,18 @@ namespace WeMnid\Controller;
 */
 use Ephp\Controller\Controller;
 use WeMnid\Form\LoginForm;
+use Ring\EventListener;
 
 class HomeController extends Controller
-{
-	
-    public function IndexAction()
+{	
+    public function HomeAction()
     {
-        $login = new LoginForm("login");
-        if($login->isSubmitted())
-        {
-            $login->bind($this->getPost());
-            if($login->isValid()){
-                $q = $this->get("bycle")->Entity('WeMnid\Entity\Admon')
-                ->findBy(array("name"=>$this->get("name"), "pwd"=>$this->get("pwd")));
-                if($q!=FALSE){
-                    echo " FOUND ";
-                }else{
-                    echo " NO FOUND";
-                }
-                /* ->findByName("ats");       
-                if ($q!=false) print_r($q);
-                else echo "pppp";
-                 * 
-                 */
-            }
-        }
+        
+        $proyects = $this->get("bycle")->Entity('WeMnid\Entity\Proyects')->findAll();
         return array(
-            'login'=>$login
+            'proyects'=>$proyects
         );
-    }
+        
+    }    
 }
 ?>

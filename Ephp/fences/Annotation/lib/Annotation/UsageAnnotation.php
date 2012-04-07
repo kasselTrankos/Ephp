@@ -42,4 +42,8 @@ class UsageAnnotation extends Annotation
    * @var boolean $inherited Set this to TRUE for Annotations that apply to members of child classes.
    */
   public $inherited = false;
+  /**
+   * @var query 
+   */
+  public $bycle = false;
 }

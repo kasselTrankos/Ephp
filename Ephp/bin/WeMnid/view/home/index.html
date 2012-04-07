@@ -1,17 +1,16 @@
-{%extends 'WeMnid:layout'%}
-{%piece 'js'%}
-	<script src='{%asset('WeMnid:js:main.js')%}'></script>
-{%endpiece%}
+{% extends 'WeMnid:layout'%}
 {%piece 'style'%}
-	<link href="{% asset('WeMnid:style:style.css')%}" media="screen" rel="stylesheet" type="text/css">
+    <link href="{% asset('WeMnid:style:style_cont.css')%}" media="screen" rel="stylesheet" type="text/css">
 {%endpiece%}
 {%piece 'content'%}
-	<form method="post" action="{%route('_home')%}">
-		{{form.login.field('name')}}
-		{{form.login.field('pwd')}}
-		<input type="submit" value="END" />
-	</form>
-{%endpiece%}
-{%piece 'footer'%}
-{%include 'WeMnid:module:footer'%}	
+{%include 'WeMnid:module:mainMenu'%}
+<div id="dashboard">
+    <ul id="rastro-migas">
+        <li>home</li>
+    </ul>
+    
+    <div class="content">
+        Soy el content
+    </div>
+</div>
 {%endpiece%}

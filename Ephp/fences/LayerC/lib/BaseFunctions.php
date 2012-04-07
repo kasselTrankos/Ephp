@@ -7,28 +7,28 @@ use LayerC\methods\Forms;
 class BaseFunctions
 {
 	
-	private $layerc_functions=array();
-	private $html, $TAGS, $ARGS;
+    private $layerc_functions=array();
+    private $html, $TAGS, $ARGS;
 
-	public function __construct($code, $tags, $args)
-	{
-		$this->html = $code;
-		$this->ARGS = $args;
-		$this->TAGS = $tags;
-		$this->Execute();
-	}
-	protected function add_layerc_function($func)
-	{
-		$this->layerc_functions[]=$func;
-	}
-	public function getHtml(){return $this->html;}
-	private function UpdateLexer()
-	{
-		$lexer = new Lexer($this->html);
-		$this->TAGS = $lexer->get('TAGS');
-		if(count($this->TAGS)>0) $this->Execute();
-		
-	}
+    public function __construct($code, $tags, $args)
+    {
+        $this->html = $code;
+        $this->ARGS = $args;
+        $this->TAGS = $tags;
+        $this->Execute();
+    }
+    protected function add_layerc_function($func)
+    {
+        $this->layerc_functions[]=$func;
+    }
+    public function getHtml(){return $this->html;}
+    private function UpdateLexer()
+    {
+        $lexer = new Lexer($this->html);
+        $this->TAGS = $lexer->get('TAGS');
+        if(count($this->TAGS)>0) $this->Execute();
+
+    }
 	protected function Execute()
 	{
 		foreach($this->layerc_functions as $m)

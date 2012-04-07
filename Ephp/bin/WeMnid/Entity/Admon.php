@@ -5,11 +5,23 @@ namespace WeMnid\Entity;
  *
  * @author kassel
  */
-use Bycle\Entity\BycleEntity;
-
-class Admon extends BycleEntity
+use Bycle\Annotation as ORM;
+/**
+ *@ORM\Entity ('table'=>'admon', 'entity'=>'WeMnid\Entity\Admon')
+ */
+class Admon
 {
+    /**
+     *@ORM\Primary 
+     */
+    public $id;
+    /**
+    * @ORM\String ('length'=>125, 'default'=>'alvaro')
+    */
     public $name="pepe";
+    /**
+     *@ORM\String ('length'=>45, 'default'=>'test') 
+     */
     public $pwd;
     public $created_at;
 }
