@@ -17,7 +17,12 @@ class NeighborsDispatcher {
     public static function addFence($name, $value){
         NeighborsDispatcher::instance()->fences[$name] = $value;
     }
-    public static function instance(){
+    public static function getFence($name){
+        if(isset(NeighborsDispatcher::instance()->fences[$name]))
+           return NeighborsDispatcher::instance()->fences[$name];
+        return FALSE;
+    }
+    public static function Instance(){
         if(self::$ins==NULL){
             self::$ins = new NeighborsDispatcher();
         }

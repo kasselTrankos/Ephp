@@ -27,9 +27,14 @@ class InputText extends MyField
         
         return $this;
     }
-    public function value($val)
+    public function value($value)
     {
-        $this->html = substr_replace($this->html, $val, 26, 0);
+        parent::defaults($this->getValue($value));
+        $this->html = substr_replace($this->html, $this->default, 26, 0);
+        return $this;
+    }
+    public function defaults($value){
+        $this->value($value);
         return $this;
     }
 }

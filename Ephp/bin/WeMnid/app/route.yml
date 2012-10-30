@@ -10,3 +10,6 @@ _validate_user:
 _list:
   pattern: /listado
   defaults: { controller: WeMnid:List:Index, template: WeMnid:list:index }
+_list_proyects:
+  pattern: /proyects
+  defaults: {controller: WeMnid:Proyects:Lists, template: WeMnid:proyects:list}

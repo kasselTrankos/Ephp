@@ -19,6 +19,7 @@ class Form
     
     public function __construct($name="")
     {        
+        $this->request = $_POST;                
         $this->name=$name;       
     }
     public function append($field, $name=NULL)
@@ -31,7 +32,11 @@ class Form
     public function getName(){return $this->name;}
     public function getHtmlField($name){return $this->fields[$name]->getField();}
     public function getHtmlLabel($name){return $this->fields[$name]->getLabel();}
-
+    public function getFieldError($name){return $this->fields[$name]->getError();}
+    public function getFieldByName($name){
+        if(isset($this->fields[$name]))
+            return $this->fields[$name];
+    }
     private function getField($field, $name){
         switch ($field) {
             case 'text':
@@ -45,7 +50,7 @@ class Form
                 break;
         }
     }
-
+    public function error(){return $this->errors;}
     public function isSubmitted(){
         return ((isset($_POST) && !empty ($_POST)) || (isset($_FILES) && !empty($_FILES)));
     }
@@ -57,12 +62,11 @@ class Form
         {
             $yml = sfYaml::load($file);
             $class = (string)get_called_class();
-            
             if(isset($yml[$class]))
             {
                 $validate = new Validation($this->request[$this->name], $yml[$class]);
-                $this->errors = $validate->valid($this);
-                return $this->errors;
+                return $validate->valid($this);
+                return FALSE;
             }
             return TRUE;    
         }

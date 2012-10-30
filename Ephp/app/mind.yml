@@ -4,3 +4,6 @@ database:
   user: root
   pwd: 33dead
   db:  ephp
+security:
+  login: /
+  

@@ -1,0 +1,31 @@
+<div class="widget">
+    <div class="widget_title">
+        <p>Tags</p>
+    </div>
+    <div class="">
+        <form action="{% route('_home')%}" id="tag_add" method="post">
+            <ul class="form_fields_container">
+                <li>
+                    {{form.tags.label('name')}}
+                    <div class="form_input">
+                    {{form.tags.field('name')}}
+                    </div>
+                    <div class="field_error">
+                        <p>{{form.tags.error('name')}}</p>
+                    </div>
+                </li>
+                <li>
+                    {{form.tags.label('uri')}}
+                    <div class="form_input">
+                    {{form.tags.field('uri')}}
+                    </div>
+                    <div class="field_error">
+                        <p>{{form.tags.error('uri')}}</p>
+                    </div>
+                </li>
+            </ul>  
+            
+            <input type="submit" value="Guardar"/>
+        </form>
+    </div>
+</div>

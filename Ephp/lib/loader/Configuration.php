@@ -1,5 +1,6 @@
 <?php
 namespace Ephp;
+
 require_once __DIR__.'/../../fences/sfYaml/lib/sfYaml.php';
 require_once __DIR__.'/../../fences/sfYaml/lib/sfYamlParser.php';
 require_once __DIR__.'/../../fences/sfYaml/lib/sfYamlInline.php';
@@ -19,7 +20,6 @@ class Configuration
     private $mainFolder='Ephp/';
     private $routing=array(), $bin=NULL;
     private $neighbors = array();
-
     private $loader;
     
     
@@ -51,15 +51,15 @@ class Configuration
             $c=file_get_contents($this->makefile);
             if($s = preg_match_all('/[^\-]+/', $c, $f))
             {
-                foreach($f[0] as $found){
+                foreach($f[0] as $found)
+                {
                     $found='-'.$found;
-                    if(preg_match('/(?<=\-libs\s).+$/', $found, $m))
+                    if(preg_match('/(?<=\-libs\s)[\s\S]*$/', $found, $m))
                         $this->libs($m[0]);
                     if(preg_match('/(?<=\-routes\s).+$/', $found, $m))
                         $this->route($m[0]);
                     if(preg_match('/(?<=\-bin\s).+$/', $found, $m))
                         $this->bin($m[0]);
-
                 }
 
             }
@@ -71,9 +71,9 @@ class Configuration
 
     public function libs($libs)
     {
-        preg_match_all('/[^\s]+/', $libs, $lib);
-
-        foreach ($lib[0] as $l) {
+        preg_match_all('/[^\s\r]+/', $libs, $lib);
+        foreach ($lib[0] as $l) 
+        {
             preg_match('/(.+)\[(.+)\]/', $l, $item);
             $this->loader->registerNamespace($item[1], $this->mainFolder.'fences'.$item[2]);
             $neighbors = NeighborsLoader::load($this->mainFolder . 'fences/' . $item[1]);

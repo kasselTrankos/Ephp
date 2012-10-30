@@ -16,17 +16,21 @@ class Bycle extends BaseBycle
     public function parseEntity_result($sql, &$entity)
     {
         $this->open();
-        
         $r = mysql_query($sql);
-        $q = mysql_fetch_object($r);
-        
-        if(!$q) return $q;
-        foreach($q as $k=>$v)
-            $entity->{$k}=$v; 
-            
-        $this->close();
-        
-        return $entity;
+        $prop = get_object_vars($entity);
+        $class = get_class($entity);
+        $entities = array();
+        while($Row = mysql_fetch_object($r))
+        {
+            $class = new  $class();
+            foreach ($prop as $k=>$v){
+                $class->{$k}=$Row->{$k};
+            }
+            $entities[] = $class;
+        }
+        if(count($entities)==0) return FALSE;
+        if(count($entities)==1) return $entities[0];
+        return $entities;
         
     }
     

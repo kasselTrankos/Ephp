@@ -1,6 +1,8 @@
+
 {% extends 'WeMnid:layout'%}
 {%piece 'style'%}
     <link href="{% asset('WeMnid:style:style_cont.css')%}" media="screen" rel="stylesheet" type="text/css">
+    <link href="{% asset('WeMnid:style:widget.css')%}" media="screen" rel="stylesheet" type="text/css">
 {%endpiece%}
 {%piece 'content'%}
 {%include 'WeMnid:module:mainMenu'%}
@@ -8,9 +10,9 @@
     <ul id="rastro-migas">
         <li>home</li>
     </ul>
-    
-    <div class="content">
-        Soy el content
+    <div class="menu_left"></div>
+    <div class="col_left">
+        {% include 'WeMnid:widget:form_tags'%}
     </div>
 </div>
 {%endpiece%}

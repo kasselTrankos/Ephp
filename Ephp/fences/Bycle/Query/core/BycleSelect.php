@@ -11,7 +11,7 @@ class BycleSelect
     {
         
     }
-    public function Sql($table, $class, $args, $limit=NULL)
+    public function Sql($db, $table, $class, $args, $limit=NULL)
     {
         $a = substr($table, 0, 1);
         $prop = get_object_vars($class);
@@ -19,7 +19,7 @@ class BycleSelect
         foreach($prop as $key=>$val)
             $sql.= $a.'.'.$key.", ";        
         $sql=substr($sql, 0, strlen($sql)-2).' ';
-        $sql.= ' FROM '.$table.' '.$a.' ';
+        $sql.= ' FROM '.$db.'.'.$table.' '.$a.' ';
         
         if($args != NULL){
             $fields = array_keys($args);

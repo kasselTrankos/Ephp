@@ -1,5 +1,9 @@
 <?php
 namespace Ephp\session;
+/**
+ * Debiera tener un modelo statico de acceso a cualquier variable
+ * tanto para set como get 
+ */
 class Session
 {
     public function __construct()
@@ -13,5 +17,6 @@ class Session
     {
         return $_SESSION[$name];
     }
+    
 }
 ?>

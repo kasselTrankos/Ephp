@@ -18,8 +18,10 @@ class Fences
             NeighborsDispatcher::instance()->addFence($name, $fence);
         }else{
             //TODO: disparar aqui una exception
-        }
-        
+        }        
+    }
+    public function getFence($name){
+        return NeighborsDispatcher::instance()->getFence($name);
     }
 }
 

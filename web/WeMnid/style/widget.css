@@ -1,0 +1,82 @@
+/* 
+    Document   : widget
+    Created on : 11-abr-2012, 22:32:00
+    Author     : kassel
+    Description:
+        Purpose of the stylesheet follows.
+*/
+.widget{
+    background: #FFF;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 1px 2px 0 #ACAEAF;
+    clear: both;
+    margin-top: 22px;
+    padding: 0px 0px 10px 0px;
+}
+.widget .widget_title {
+    background: url("../img/widget_title_bg.png") repeat-x scroll center top #EEE;
+    border-bottom: 1px solid #E0E0E0;
+    border-radius: 3px 3px 0 0;
+    height: 38px;    
+}
+.widget .widget_title p{
+    color: #6C6C6C;
+    float: left;
+    font-family: CorbelBold;
+    font-size: 14px;
+    padding: 13px 0 10px 10px;
+    text-shadow: 0 1px 0 #FFFFFF;
+}
+.widget input{  
+background: none repeat scroll 0 0 #F8F8F8;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 1px 0 0 #FFFFFF inset;
+    color: #666666;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    padding: 8px;
+    width: 98%;
+}
+.form_fields_container li {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-top: 1px dotted #E6E6E6;
+    display: inline-block;
+    list-style: none outside none;
+    padding: 5px 0;
+    width: 100%;
+}
+.form_fields_container > li > label {
+    color: #818386;
+    display: block;
+    float: left;
+    font-size: 13px;
+    margin: 5px 0 5px 25px;
+    padding: 5px 0;
+}   
+.form_fields_container li div.form_input {
+    display: block;
+    float: right;
+    margin-right: 25px;
+    text-shadow: 0 1px 0 #FFFFFF;
+    width: 75%;
+}
+.widget form input[type='submit']{
+    background: -moz-linear-gradient(center top , #7794A7 5%, #627A8A 100%) repeat scroll 0 0 #7794A7;
+    border: 1px solid #627A8A;
+    box-shadow: 0 1px 0 0 #829CAF inset;
+    color: #FFFFFF;
+    display: inline-block;
+    font-family: trebuchet ms,arial,verdana;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 20px;
+    text-decoration: none;
+    text-shadow: 1px 1px 0 #5F798C;
+    width: auto; cursor: pointer;
+   
+}
+.form_fields_container .field_error{color: red; width: 100%;}
+.form_fields_container .field_error p{float: left;padding: 3px 40px;}
+
+

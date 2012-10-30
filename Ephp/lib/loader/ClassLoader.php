@@ -25,15 +25,17 @@ class ClassLoader
         if(isset($this->namespaces[$namespace]))
             $path = array_merge($this->namespaces[$namespace], $path);        
         $this->namespaces[$namespace] = $path;
+        ///////print_r($this->namespaces);
     }
 
     public function register()
     {
         spl_autoload_register(array($this, 'loadClass'), true, false);
     }	
-    public function loadClass($className){
-
-        if (null === $this->_namespace || $this->_namespace.$this->_namespaceSeparator === substr($className, 0, strlen($this->_namespace.$this->_namespaceSeparator))) {
+    public function loadClass($className)
+    {
+        if (null === $this->_namespace || $this->_namespace.$this->_namespaceSeparator === substr($className, 0, strlen($this->_namespace.$this->_namespaceSeparator))) 
+        {
             $fileName = '';
             $namespace = '';
             $path = '';

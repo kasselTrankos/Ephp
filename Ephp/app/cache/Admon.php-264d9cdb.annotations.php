@@ -13,4 +13,7 @@ return array(
   'WeMnid\\Entity\\Admon::$pwd' => array(
     array('Bycle\\Annotation\\StringAnnotation', 'length'=>45, 'default'=>'test')
   ),
+  'WeMnid\\Entity\\Admon::$role' => array(
+    array('Bycle\\Annotation\\StringAnnotation', 'length'=>45, 'default'=>'test')
+  ),
 );

@@ -12,16 +12,17 @@ use Annotation\Annotations;
 
 class BycleEntity 
 {
-    private $entity, $bycle, $table;
+    private $entity, $bycle, $table, $db;
     
     public function __construct()
     {
         $conn = sfYaml::load(__DIR__.'/../../../app/mind.yml');
-        $this->bycle = new Bycle($conn['database']); 
+        $this->bycle = new Bycle($conn['database']);
+        $this->db = $conn['database']['db'];
     }
     public function Select($args=NULL, $limit=NULL){
         $qsql = new BycleSelect();
-        $sql = $qsql->Sql($this->table, $this->entity, $args, $limit);
+        $sql = $qsql->Sql($this->db, $this->table, $this->entity, $args, $limit);
         return $this->bycle->parseEntity_result($sql, $this->entity);        
     }
     public function setEntity($entity){

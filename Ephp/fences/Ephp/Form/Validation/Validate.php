@@ -6,29 +6,49 @@ namespace Ephp\Form\Validation;
  *
  * @author Kassel
  */
+use Ephp\Fences\Fences;
+use Ephp\Form\Form;
+use Annotation\Annotations;
+
 class Validate
 {
-    private $form, $valid, $errors = array();
+    private $form, $valid, $errors = array(), $ephp;
+    
     public function __construct()
     {
+        $fences = new Fences();
+        $this->ephp = $fences->getFence("ephp");
     }
-    public function isValid($request, $valid, $name)
+    public function isValid($request, $valid, Form $form)
     {        
-        foreach($valid as $key=>$val)
+        foreach($valid as $key=>$consts)
         {
-            $class  = 'Ephp\Form\Validation\Consts';            
-            $class.='\\'.key($val);
-            $valids =new  $class($val[key($val)]);
-            $m = $valids->Valid($request[$key], $val[key($val)]);
-            if(is_string($m)) {
-                $this->errors[]=array(
-                    "message"=>$m,
-                    "form"=>$name,
-                    "field"=>$key
-                );                
+            
+            
+            $field = $form->getFieldByName($key);
+            
+            foreach($consts as $nameConst=>$const)
+            {
+                $class  = 'Ephp\Form\Validation\Consts';
+                $class.= '\\'.$nameConst;
+                $constValidation =new  $class($const);
+                $error = call_user_func_array(array($constValidation, 'Valid'), $constValidation->getArgs($request[$key]));
+                ////$constValidation->Valid($request[$key], $constValidation->getArgs());
+                
+                if($error)
+                {
+                    $this->errors[]=array(
+                        "message"=>$constValidation->message(),
+                        "form"=>$form->getName(),
+                        "field"=>$key
+                    );  
+                    $field->setError($constValidation->message());
+                    break;
+                }
             }
+            
         }
-        return (count($this->errors)>0) ? $this->errors: TRUE;
+        return (count($this->errors)==0) ? TRUE: $this->errors;
         
     }
 }

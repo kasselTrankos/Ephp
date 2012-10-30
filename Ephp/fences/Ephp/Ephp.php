@@ -1,4 +1,5 @@
 <?php
+
 namespace Ephp;
 use Ephp\Route\Route;
 use Ephp\serialize\Serialize;
@@ -10,16 +11,21 @@ use Ring\Event;
 use Ring\EventListener;
 use Ephp\Fences\Fences;
 use Ephp\Event\NeighborsDispatcher;
+
+
 class Ephp
 {
     private $route, $controller, $layerC;
     private $loader, $fences, $neighbors;
+    private $args=NULL;
     
     public function __construct($route, $bin, $neighbors=NULL)
     {
+       
         
         ////EventListener::Listener()->bind($evtController);
         $this->fences = new Fences();
+        $this->fences->Add("ephp", $this);
         NeighborsDispatcher::Instance()->add($neighbors);
         $this->route = new Route($route, $bin);
         $this->fences->Add("Route", $this->route);
@@ -46,8 +52,10 @@ class Ephp
             $method.='Action';
             $c = $namespace.'\\Controller\\'.$class;
             $this->controller = new $c($this);
+            
             $this->fences->Add("controller", $this->controller);
             $this->controller->server($this->route->server());
+            $mAnnotation= Annotations::ofMethod($this->controller, $method);
             $vars = $this->controller->{$method}();
             //$evtController = new Event("on.loadController", array("controller"=>$this->controller));
             NeighborsDispatcher::Instance()->run('on.loadController');
@@ -56,7 +64,6 @@ class Ephp
         }else{
             echo "nothing to load necesito un controllador";
         }
-
             ///print_r($vars);
     }
 		

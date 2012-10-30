@@ -1,4 +1,4 @@
-<?php
+<?php   
 namespace WeMnid\Controller;
 use Ephp\Controller\Controller;
 use WeMnid\Form\LoginForm;
@@ -8,10 +8,11 @@ class UserController extends Controller
     public function LoginAction()
     {
         $login = new LoginForm("login");
+        
         if($login->isSubmitted())
         {
-            $login->bind($this->getPost());
-            if($login->isValid()){
+            if($login->isValid())
+            {
                 $q = $this->get("bycle")->Entity('WeMnid\Entity\Admon')
                 ->findBy(array("name"=>$this->get("name"), "pwd"=>$this->get("pwd")));
                 
@@ -27,6 +28,7 @@ class UserController extends Controller
                 else echo "pppp";
                  * 
                  */
+            }else{
             }
         }
         return array(

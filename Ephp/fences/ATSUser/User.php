@@ -1,17 +1,18 @@
 <?php
 namespace ATSUser;
 /**
- * Description of User from ephp.home
+ * Mantiene en session el usuario, necesito un role
  *
  * @author kassel
  */
 use Ring\EventListener;
 use WeMnid\Entity\Admon;
 use Ephp\session\Session;
-class User {
+class User 
+{
+    
     public function __construct(){
-        EventListener::Listener()->bind('on.userLogin', array($this, 'addToSession'));
-        
+        EventListener::Listener()->bind('on.userLogin', array($this, 'addToSession'));        
     }
     public function addToSession(Admon $user, Session $session)
     {

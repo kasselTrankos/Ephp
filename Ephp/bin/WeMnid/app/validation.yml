@@ -2,3 +2,9 @@
 WeMnid\Form\LoginForm:
   name:
     Blank: No puede ir vacio
+WeMnid\Form\TagForm:
+  name:
+    Blank: No puedes dejar TAG en blanco.
+    Regex: { pattern: /\s/, message: No valido}
+  uri:
+    URL: Url invalida

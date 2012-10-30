@@ -8,7 +8,8 @@ class Forms
     private $args, $forms, $html='';
     private $func=array(
         'label' =>array('reg'=>'/(.+)\.label\(\'\s*(.+)\s*\'\)/', 'func'=>'getLabel'),
-        'field' =>array('reg'=>'/(.+)\.field\(\'\s*(.+)\s*\'\)/', 'func'=>'getField')
+        'field' =>array('reg'=>'/(.+)\.field\(\'\s*(.+)\s*\'\)/', 'func'=>'getField'),
+        'error' =>array('reg'=>'/(.+)\.error\(\'\s*(.+)\s*\'\)/', 'func'=>'getError')
     );
 
     public function __construct($args, $pattern)
@@ -38,5 +39,6 @@ class Forms
     private function getLabel($form, $name){$this->html = utf8_decode($form->getHtmlLabel($name));}
     private function getPiece(){}
     private function getField($form, $name){$this->html = $form->getHtmlField($name);}
+    private function getError($form, $name){$this->html = $form->getFieldError($name);}
 }
 ?>

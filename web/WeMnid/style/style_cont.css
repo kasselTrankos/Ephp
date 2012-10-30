@@ -5,25 +5,24 @@
         Description:
             Purpose of the stylesheet follows.
     */
-    hmtl, body{background: url('../img/9.png') #222;
-    font-family: verdana, Arial; font-size: 12px; text-align: center;}
-    *{margin: 0px; padding: 0px; list-style:none;}
-    .clear{clear:both;}
-    /************************************************/
-    #HEADER{ background:#b8ab92; line-height:55px; border-bottom: 1px solid #fff; height:55px; }
-    #HEADER .logged-user{float: left; background: url('../img/icon_person.png') no-repeat;
-    width: auto; padding: 0px 0px 0px 50px;}
-    #HEADER .logged-user p{float: left; color: #fff; font-size: 14px;}
-    #HEADER  ul{float:left; margin-left:45px; background:  url('../img/bg_a_button.png') -3px top repeat-y;}
-    #HEADER  ul li{float: left; font-size: 10px;}
-    #HEADER  ul li.proyects{ margin-left: 2px;background: url('../img/icon_proyects.png') 14px 0px no-repeat;
-    line-height: normal; height: 55px;}
-    #HEADER  ul li.proyects a{ color:#fff; float: left; text-decoration: none;
-    padding: 40px 10px 2px; display: block; background:  url('../img/bg_a_button.png') right top repeat-y;}
-    #HEADER  ul li a:hover{background: url('../img/bg_over_button.png') right top repeat-y;}
-    /***************************/
-    #dashboard{width: 100%; text-align: center; margin-top:10px; }
-    
-    #dashboard .content{-webkit-border-radius: 10px; margin: 0px auto;
--moz-border-radius: 10px; width: 910px; background: #fff; border: 1px solid #f9f1ed;
-border-radius: 10px; padding: 20px 13px; box-shadow:2px 2px 4px #B0A592;}
+hmtl, body{background: url('../img/9.png') #222;
+font-family: verdana, Arial; font-size: 12px; text-align: center;}
+*{margin: 0px; padding: 0px; list-style:none;}
+.clear{clear:both;}
+/************************************************/
+#HEADER{ background:#b8ab92; line-height:55px; border-bottom: 1px solid #fff; height:55px; }
+#HEADER .logged-user{float: left; background: url('../img/icon_person.png') no-repeat;
+width: auto; padding: 0px 0px 0px 50px;}
+#HEADER .logged-user p{float: left; color: #fff; font-size: 14px;}
+#HEADER  ul{float:left; margin-left:45px; background:  url('../img/bg_a_button.png') -3px top repeat-y;}
+#HEADER  ul li{float: left; font-size: 10px;}
+#HEADER  ul li.proyects{ margin-left: 2px;background: url('../img/icon_proyects.png') 14px 0px no-repeat;
+line-height: normal; height: 55px;}
+#HEADER  ul li.proyects a{ color:#fff; float: left; text-decoration: none;
+padding: 40px 10px 2px; display: block; background:  url('../img/bg_a_button.png') right top repeat-y;}
+#HEADER  ul li a:hover{background: url('../img/bg_over_button.png') right top repeat-y;}
+/***************************/
+#dashboard{ text-align: center; margin-left: 210px;}
+
+
+.col_left{float: left; width: 49%;}

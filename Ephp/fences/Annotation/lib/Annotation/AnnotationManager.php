@@ -336,7 +336,6 @@ class AnnotationManager
       
       $this->applyConstraints($this->annotations[$key], $member);
     }
-    
     return $this->annotations[$key];
   }
   
@@ -487,7 +486,6 @@ class AnnotationManager
       $method = $class->name;
       $class = $class->class;
     }
-    
     if (!class_exists($class, $this->autoload))
       throw new AnnotationException(__CLASS__."::getMethodAnnotations() : undefined class {$class}");
     
@@ -495,7 +493,7 @@ class AnnotationManager
       throw new AnnotationException(__CLASS__."::getMethodAnnotations() : undefined method {$class}::{$method}()");
     
     if ($type===null)
-      return $this->getAnnoattions($class, 'method', $method);
+      return $this->getAnnotations($class, 'method', $method);
     else
       return $this->filterAnnotations($this->getAnnotations($class, 'method', $method), $type);
   }

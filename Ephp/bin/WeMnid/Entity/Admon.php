@@ -23,6 +23,11 @@ class Admon
      *@ORM\String ('length'=>45, 'default'=>'test') 
      */
     public $pwd;
+    /**
+     *@ORM\String ('length'=>45, 'default'=>'test') 
+     */
+    public $role;
+    
     public $created_at;
 }
 

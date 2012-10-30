@@ -18,12 +18,14 @@ use Ephp\Ephp;
 class Application 
 {
     public function __construct()
-    {
-    	
+    {    	
     	$config = new Configuration();
     	$config->load();
-    	$ephp = new Ephp($config->getRouting(TRUE), $config->getBin(), $config->getNeighbors());
-     
+    	$ephp = new Ephp(
+            $config->getRouting(TRUE), 
+            $config->getBin(), 
+            $config->getNeighbors()
+        );     
     }
 }
 ?>

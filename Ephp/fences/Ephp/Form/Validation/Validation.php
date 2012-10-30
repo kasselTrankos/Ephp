@@ -7,6 +7,8 @@ namespace Ephp\Form\Validation;
  * @date 07-oct-2011 
  */
 use Ephp\Form\Validation\Validate;
+
+
 class Validation 
 {
     private $request, $validation;
@@ -19,8 +21,8 @@ class Validation
         $this->validate = new Validate();
     }
     public function valid($form)
-    {
-        return $this->validate->isValid($this->request, $this->validation, $form->getName());
+    {        
+        return $this->validate->isValid($this->request, $this->validation, $form);
     }
 }
 

@@ -11,10 +11,7 @@ class Blank extends BaseConst
 {
     public function Valid($value)
     {
-        if(empty($value) || strlen($value)==0 || $value==NULL){
-            return $this->message();
-        }
-        return true;
+        return (empty($value) || strlen($value)==0 || $value==NULL);            
     }
     
 }

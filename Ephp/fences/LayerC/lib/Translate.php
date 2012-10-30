@@ -13,7 +13,7 @@ class Translate
 	{
 		$this->html = $code;
 		
-		$methods = new LayerCMethods($code, $this->Lexer($code, 'PRIVATE'), $route);
+		$methods = new LayerCMethods($code, $this->Lexer($code, 'PRIVATE'), $route, $args);
 		$code = $methods->getHtml();
 		$functions = new LayerCFunctions($code, $this->Lexer($code, 'TAGS'), $args);
 		$code =$functions->getHtml();
